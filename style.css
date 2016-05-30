@@ -1,0 +1,99 @@
+body {
+	background-color:#000000;
+	margin-top: 60px;
+}
+
+.jumbotron {
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+/** TEXT **/
+
+
+h1 {
+	color: #ffffff;
+}
+
+h2 {
+	margin-top: 3px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	color:black;
+}
+
+q {
+	font-family: 'Noto Serif', serif;
+	font-size: 30px;
+	margin-left: 150px;
+	margin-right: 50px;
+	text-align: left;
+}
+
+span {
+	text-align: right;
+	margin-left: 50px;
+}
+
+.link {
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+}
+
+/** BORDERS **/
+.black-box {
+	background-color: #000000;
+	margin: 3px 150px 3px 150px;
+	overflow-x: hidden 
+}
+
+.black-border {
+	border-color: white;
+	border-width: 3px;
+	border-style: solid;
+}
+
+/****  IMAGE CSS ***/
+.img-resize {
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	margin: 5px 150px 50px 150px;
+}
+
+.smaller-image {
+	height: 350px;
+	width: auto;
+}
+
+.margin-top  {
+	margin-top: 25px;
+}
+
+.margin-sides {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.margin-bottom {
+	margin-bottom: 20px;
+}
+
+.center-image {
+	text-align: center;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/** LIST **/
+
+ol li {
+	list-style-position: inside;
+	margin-left: 300px;
+}
