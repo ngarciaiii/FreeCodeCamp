@@ -1,5 +1,1 @@
-<script>
-$(function () {
-    $("[data-toggle='tooltip']").tooltip();
-});
-</script>
+// $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
