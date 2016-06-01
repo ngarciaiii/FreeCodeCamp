@@ -1,7 +1,7 @@
+/*** Navbar ***/
+
 .navbar {
-	/*display: block;*/
 	float: right;
-/*	text-align: right;*/
 	margin-top: 50px;
 	margin-left: 900px;
 	max-width: 77px;
@@ -9,39 +9,60 @@
 	position: relative;
 }
 
-
 .orange-bg {
 	background-color: #FF6600;
 	border-radius: 7px;
-	padding-top: 7px;
+	margin-right: 5px;
+/*	padding-top: 3px;
 	padding-right: 0px; 
-	padding-bottom: 7px;
-	padding-left: 0px;
-
+	padding-bottom: 3px;*/
 }
 
 .bright-orange-bg {
 	background-color: #FF9933;
 }
 
-.white-color {
-	color: #FFFFFF;
-}
-
 .btn {
-    padding: 13px 19px 13px 19px;
+    padding: 7px 37px 7px 13px;
     border: 0 none;
     font-weight: 700;
     letter-spacing: 0px;
     text-transform: uppercase;
 }
 
-/*.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
-    background: #33a6cc;
-    color: #FF9933;
+.glyphicon {
+	font-size: 130%;
 }
- 
-.btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: 0 none;
+
+
+
+
+
+
+/*.btnWrap {
+	position: relative;
+	height: 50px;
+	width: 257px;
+}
+
+.btnDescription {
+	position: absolute;
+	white-space: nowrap;
+	top: 1px;
+	right: 0;
+	bottom: 0;
+	left: 0px;
+	background: rgba(29, 106, 154, 0.72);
+  	color: #FFFFFF;
+  	visibility: hidden;
+  	opacity: 0;
+}
+
+.btnWrap:hover .orange-bg {
+  width: 300px;
+  visibility: visible;
+  opacity: 1;
+
 }*/
+
 
