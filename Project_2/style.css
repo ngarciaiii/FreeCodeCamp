@@ -1,22 +1,20 @@
 /*** Navbar ***/
 
 .navbar {
+/*	float: left;*/
+	position: sticky;
 	float: right;
-	margin-top: 50px;
-	/*margin-left: 900px;*/
+	margin-top: 230px;
+	margin-left: 13px;
 	max-width: 77px;
-	min-height: 27%;
-	position: relative;
-}
-
-.orange-bg {
-	background-color: #FF6600;
+/*	min-height: 27%;*/
+/*	z-index: 150;*/
+	background-color: #ffd46b;
 	border-radius: 7px;
-	margin-right: 5px;
 }
 
-.bright-orange-bg {
-	background-color: #FF9933;
+.bright-yellow-bg {
+	background-color: #e1d6c8;
 }
 
 .btn {
@@ -25,6 +23,7 @@
     font-weight: 700;
     letter-spacing: 0px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .glyphicon {
@@ -35,6 +34,10 @@
 	font-size: 27px; 
 }
 
+a {
+	color: #005055;
+}
+
 /*** Webpage ***/        
 
 
@@ -42,6 +45,7 @@ body{
 	margin: 0;
 	min-width: 980px;
 	padding: 0;
+	overflow-x:hidden;
 }
 
 p{
@@ -93,20 +97,21 @@ h2{
 	text-align: center;
 }
 
-#nav{
+/*#nav{
 	float: right;
-	position: initial;
-}
+	position: fixed;
+	margin-right: 7px;
+}*/
 
 #header, #intro, #second{
 	width: 100%;
 }
 
 #intro{
-	background:url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/LargeSize.png) 50% 0 no-repeat fixed;
+	background:url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/intro1.png) 50% 0 no-repeat fixed;
 	color: white;
-	height: 1300px;
-	/*width: ;*/
+	height: 950px;
+/*	width: 100%;*/
 	margin: 0 auto;
 	padding: 0;
 }
