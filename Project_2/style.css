@@ -34,9 +34,14 @@
 	font-size: 27px; 
 }
 
+.col-xs-1{
+	padding
+}
+
 a {
 	color: #005055;
 }
+
 
 /*** Webpage ***/        
 
@@ -110,14 +115,14 @@ h2{
 #intro{
 	background:url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/intro1.png) 50% 0 no-repeat fixed;
 	color: white;
-	height: 950px;
+	height: 750px;
 /*	width: 100%;*/
 	margin: 0 auto;
 	padding: 0;
 }
 
 #second{
-	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/pegboard.jpg) 50% 0 repeat fixed;
+	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/intro1.png) 50% 0 no-repeat fixed;
 	color: white;
 	height: 1300px;
 	margin: 0 auto;
@@ -126,9 +131,9 @@ h2{
 }
 
 #second .bg{
-	background: url(images/trainers.png) 50% 0 no-repeat fixed;
-	height: 1300px;
-	margin: 0 auto;
+	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/crunchedPaper.png) 50% 0 no-repeat fixed;
+	height: 500px;
+	margin: 210px auto;
 	padding: 0;
 	position: absolute;
 	width: 900px;
@@ -136,15 +141,15 @@ h2{
 }
 
 #third{
-	background: url(images/thirdBG.jpg) 50% 0 no-repeat fixed;
+	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/pegboard.jpg) 50% 0 repeat fixed;
 	color: white;
 	height: 650px;
 	padding: 100px 0 0 0;	
 }
 
 #fifth{
-	background: #ccc;
-	height: 400px;
+	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/pegboard.jpg) 50% 0 repeat fixed;;
+	height: 650px;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
 }
