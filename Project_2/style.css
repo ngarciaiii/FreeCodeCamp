@@ -1,4 +1,16 @@
-/*** Navbar ***/
+/******* TOP *******/
+.top-hdr {
+	margin-top: 19px;
+}
+
+.larger-font-size {
+	font-size: 27px;
+}
+
+/*.margin-left{
+	margin-left: 9px;
+}*/
+/******* Navbar *******/
 
 .navbar {
 	position: sticky;
@@ -40,8 +52,14 @@ a {
 }
 
 
-/*** Webpage ***/        
-
+/******* Webpage *******/        
+h1 {
+	font-family:'Source Sans Pro', sans-serif;
+	font-size: 57px;
+	font-size-adjust:0.40;
+	font-weight:700;
+	font-style:normal;
+}
 
 body{
 	margin: 0;
@@ -56,21 +74,22 @@ p{
 
 p, ul{
 	font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
-	font-size-adjust:0.488;
-	font-weight:200;
-	font-style:normal;
+	font-size: 21px;
+	/*font-weight:200;
+	font-style:normal;*/
 }
 
 img{
 	border: 0;
 }
 
-h1, #pixels{
-	font-family:"Museo 900", Verdana, seri;
+/*h1 {
+	font-family:'Source Sans Pro', sans-serif;
+	font-size: 53px;
 	font-size-adjust:0.40;
 	font-weight:700;
 	font-style:normal;
-}
+}*/
 
 h2{
 	font-family:"Beau Sans Pro Book", Verdana, sans-serif;
@@ -81,12 +100,12 @@ h2{
 
 
 
-/*crunchedPaper*/
+/******* crunchedPaper *******/
 .about {
 	position: relative;
-	background-image: url("file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/wrinkledpaper.png");
-	background-repeat: no-repeat;
-	height: 500px;
+	background-image: url("file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png");
+	background-repeat: repeat;
+	height: 700px;
 	width: 700px;
 	margin-top: 100px;
 	margin-left: 150px;
@@ -99,12 +118,23 @@ h2{
 	left: 3;
 }
 
+.rounded-square {
+	border-radius: 27px;
+}
+
+.border-box {
+	border-style: solid;
+	border-width: 7px;
+	border-color: #005055;
+
+}
+
 h3 {
 
 	text-align: center;
-	font: bold 37px 'Shadows Into Light Two', Helvetica, Sans-serif;
+	font: bold 37px 'Source Sans Pro', sans-serif;;
 	/* font ^^ 400 3.5em/125% */
-	color: #0000ff;
+	color: #005055;
 	top: 15px;
 	padding: 13px;
 	left: 15px;
@@ -112,8 +142,8 @@ h3 {
 
 .about p {
 	text-align: left;
-	font: 27px/37px 'Shadows Into Light Two', Helvetica, Sans-serif;
-	color: #0000ff;
+	font: 27px/37px 'Source Sans Pro', sans-serif;
+	color: #005055;
 	padding: 7px 13px;
 	left: 3;
 }
@@ -122,7 +152,7 @@ h3 {
 
 
 
-/** main pages **/
+/******* main pages *******/
 #header h1, #pixels{
 	color: #48941A;
 }
@@ -169,12 +199,12 @@ h3 {
 #third{
 	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/pegboard.jpg) 50% 0 repeat fixed;
 	color: white;
-	height: 650px;
+	height: 1300px;
 	padding: 100px 0 0 0;	
 }
 
-#fifth{
-	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/pegboard.jpg) 50% 0 repeat fixed;;
+#fourth{
+	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png) 50% 0 repeat fixed;;
 	height: 650px;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
