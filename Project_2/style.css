@@ -7,28 +7,21 @@
 	font-size: 27px;
 }
 
-/*.margin-left{
-	margin-left: 9px;
-}*/
-/******* Navbar *******/
+/******* NAVBAR *******/
 
 .navbar {
 	position: sticky;
 	float: right;
 	margin-top: 230px;
 	margin-left: 13px;
-	max-width: 77px;
+	max-width: 73px;
 	background-color: #ffd46b;
 	border-radius: 7px;
 }
 
-.bright-yellow-bg {
-	background-color: #e1d6c8;
-}
-
 .btn {
-    padding: 7px 37px 7px 13px;
     border: 0 none;
+    max-width: 70px;
     font-weight: 700;
     letter-spacing: 0px;
     text-transform: uppercase;
@@ -37,22 +30,14 @@
 
 .glyphicon {
 	font-size: 130%;
+	color: #005055;
 }
 
 .tooltip {
 	font-size: 27px; 
 }
 
-.col-xs-1{
-	padding
-}
-
-a {
-	color: #005055;
-}
-
-
-/******* Webpage *******/        
+/******* GENERAL *******/        
 h1 {
 	font-family:'Source Sans Pro', sans-serif;
 	font-size: 57px;
@@ -100,7 +85,7 @@ h2{
 
 
 
-/******* crunchedPaper *******/
+/******* ABOUT PAGE *******/
 .about {
 	position: relative;
 	background-image: url("file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png");
@@ -113,7 +98,7 @@ h2{
 
 }
 
-.smaller-image {
+.smallest-image {
 	height:200px;
 	margin-right: 19px;
 	left: 3;
@@ -150,18 +135,62 @@ h3 {
 }
 
 
-/******* table *******/
+/******* PORTFOLIO WORK GALLERY *******/
 
-table, th, td {
-    border: 1px solid black;
-    padding: 5px;
+.gallery li {
+	float: left;
+	list-style: none;
+	width: 27%;
+	margin: 2.5%;
 }
 
-table {
-    border-spacing: 15px;
+
+.gallery img {
+	height: 250px;
+	width: auto;
+}
+
+.gallery li:nth-child(4n) {
+	clear: left;
 }
 
 
+.image {
+    position:relative;
+    height:250px;
+    width:200px;
+}
+
+.image img {
+    width:100%;
+    vertical-align:top;
+}
+.image:after, .image:before {
+    position:absolute;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image:after {
+    content:'\A';
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,1);
+}
+.image:before {
+    content: attr(data-content);
+    width:100%;
+    color:#fff;
+    z-index:1;
+ /*   bottom:0;*/
+    padding:100px;
+    text-align:center;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+.image:hover:after, .image:hover:before {
+    opacity:.8;
+}
 
 /******* main pages *******/
 #header h1, #pixels{
@@ -201,7 +230,7 @@ table {
 #second{
 	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/intro1.png) 50% 0 no-repeat fixed;
 	color: white;
-	height: 900px;
+	height: 750px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
@@ -210,8 +239,8 @@ table {
 #third{
 	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/pegboard.jpg) 50% 0 repeat fixed;
 	color: white;
-	height: 1300px;
-	padding: 100px 0 0 0;	
+	height: 750px;
+	padding: 15px 0 0 0;	
 }
 
 #fourth{
