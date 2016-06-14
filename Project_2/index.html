@@ -104,10 +104,11 @@
 <div id="fourth">
   <div class="story">
       <div class="float-center">
-          <h2>Mad Skillz</h2>
+          <h2>Development Skills</h2>
             <p><strong>Computer Languages & Frameworks:</strong> Python | JavaScript | jQuery | HTML5 | CSS3 | Git | AJAX <br>
             <strong>Softwares:</strong> Adobe PhotoShop | MS Power Point | Adobe DreamWeaver | Sublime 2 | Terminal<br>
-            <strong>Methologies:</strong> Object Oriented Programming | MVC Pattern |  Responsive Design/CSS | Authenication | User Stories | ERDs | Wireframing | Development<br>
+            <strong>Methologies:</strong> Object Oriented Programming | MVC Pattern |  Responsive Design/CSS | Authenication  User Stories | ERDs 
+            Wireframing | Development<br>
             <br></p>
         </div>
     </div> <!--.story-->
@@ -115,40 +116,33 @@
 
 <div id="fifth">
   <div class="story">
-      <section id="contact" class="page">
-            <div class="content">
-                <!-- row -->
-                <div class="row">
-                    <!-- column 12/12 -->
-                    <div class="col-md-12">
-                        <!-- .contact-form -->
-                        <div class="contact-form">
-                            <form name="message" method="post">
-                              <section style="float:center;">
-                                <div style="float:left;margin-right:20px;" class="col-md-4">
-                                    <label id="name" for="name">Name</label>
-                                    <input id="name" type="text" value="" name="name">
-                                </div>
-                                <div style="float:left;" class="col-md-4">
-                                    <label id="email" for="email">Email</label>
-                                    <input id="email" type="text" value="" name="email">
-                                </div>
-                                <br style="clear:both;"/>
-                              </section>
-                              <br/>
-                              <section class="col-md-10">
-                                <label for="message">Message</label>
-                                <input id="message" type="text" value="" name="message"class="col-md-10">
-                              </section>
-                            </form>
-                        </div>
-                        <!-- .contact-form -->
-                    </div>
-                    <!-- column 12/12 -->
-                </div>
-                <!-- row -->
-            </div>
+    <form name="message" method="post">
+      <div class="contact-content">
+        <span>
+          Drop a message
+        </span>
+      </div>
+        <br><br/>
+        <section>
+          <div style="float:left;margin-right:20px;" class="col-md-4">
+              <label id="name" for="name">Name</label>
+              <input id="name" type="text" value="" name="name">
+          </div>
+          <div style="float:left;" class="col-md-4">
+              <label id="email" for="email">Email</label>
+              <input id="email" type="text" value="" name="email">
+          </div>
+          <br style="clear:both;"/>
         </section>
+        <br/>
+        <section class="col-md-10">
+          <label for="message">Message</label>
+          <textarea id="message" type="text" value="" name="message"class="col-md-10" cols="70" rows="12"></textarea>
+        </section>
+        <div class="submit">
+          <input type="submit" value="SEND" id="button-blue"/>
+        </div>
+    </form>
   </div> <!--.story-->
 </div> <!--#fifth-->
 
