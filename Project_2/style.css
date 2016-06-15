@@ -199,9 +199,10 @@ h3 {
 /*-- Modules --*/
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
-  max-width: 1170px;
-  margin: 0 auto;
+  width: 50%;
+/*  max-width: 1170px;*/
+  float:left;
+
 }
 .cd-container::after {
   /* clearfix */
@@ -222,10 +223,10 @@ h3 {
   content: '';
   position: absolute;
   top: 0;
-  left: 18px;
+  left: 7%;
   height: 100%;
-  width: 4px;
-  background: #d7e4ed;
+  width: 3px;
+  background: #005055;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -233,7 +234,7 @@ h3 {
     margin-bottom: 3em;
   }
   #cd-timeline::before {
-    left: 50%;
+    left: 3;
     margin-left: -2px;
   }
 }
@@ -242,6 +243,7 @@ h3 {
   position: relative;
   margin: 2em 0;
 }
+
 .cd-timeline-block:after {
   content: "";
   display: table;
@@ -269,37 +271,35 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 37px;
   border-radius: 50%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img img {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 37px;
+  height: 37px;
   position: relative;
-  left: 50%;
+  left: 7%;
   top: 50%;
   margin-left: -12px;
   margin-top: -12px;
 }
-.cd-timeline-img.cd-picture {
-  background: #75ce66;
+.cd-timeline-img.cd-completed {
+  background: #005055;
 }
-.cd-timeline-img.cd-movie {
-  background: #c03b44;
+.cd-timeline-img.cd-incomplete {
+  background: #ffd46b;
 }
-.cd-timeline-img.cd-location {
-  background: #f0ca45;
-}
-@media only screen and (min-width: 1170px) {
+
+/*@media only screen and (min-width: 1170px) {
   .cd-timeline-img {
-    width: 60px;
-    height: 60px;
-    left: 50%;
-    margin-left: -30px;
-    /* Force Hardware Acceleration in WebKit */
+    width: 43px;
+    height: 43px;
+    left: 7%;
+    margin-left: -30px;*/
+    /* Force Hardware Acceleration in WebKit 
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
@@ -373,7 +373,7 @@ h3 {
 }
 .cd-timeline-content {
   position: relative;
-  margin-left: 60px;
+  float: left;
   background: white;
   border-radius: 0.25em;
   padding: 1em;
@@ -391,9 +391,9 @@ h3 {
   font-size: 13px;
   font-size: 0.8125rem;
 }
-.cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+/*.cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
-}
+}*/
 .cd-timeline-content p {
   margin: 1em 0;
   line-height: 1.6;
@@ -413,7 +413,7 @@ h3 {
   padding: .8em 0;
   opacity: .7;
 }
-.cd-timeline-content::before {
+/*.cd-timeline-content::before {
   content: '';
   position: absolute;
   top: 16px;
@@ -422,7 +422,7 @@ h3 {
   width: 0;
   border: 7px solid transparent;
   border-right: 7px solid white;
-}
+}*/
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;
@@ -439,19 +439,21 @@ h3 {
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
-    margin-left: 0;
+    float:right;
     padding: 1.6em;
     width: 45%;
   }
-  .cd-timeline-content::before {
+/*  .cd-timeline-content::before {
     top: 24px;
     left: 100%;
     border-color: transparent;
     border-left-color: white;
-  }
-  .cd-timeline-content .cd-read-more {
+  }*/
+
+/*  .cd-timeline-content .cd-read-more {
     float: left;
   }
+  */
   .cd-timeline-content .cd-date {
     position: absolute;
     width: 100%;
