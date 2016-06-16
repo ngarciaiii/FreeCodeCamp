@@ -196,21 +196,53 @@ h3 {
 
 /******* RESUME PAGE *********/
 
-/*-- Modules --*/
+.two-col section, aside, {
+  margin: 0 1.5% 24px 1.5%;
+}
+
+.two-col section {
+  float: left;
+  width: 45%;
+}
+
+.two-col aside {
+  float: right;
+  width: 55%;
+  margin-top: 69px;
+}
+
+.two-col aside p {
+  text-align: left;
+  font: 23px/35px 'Source Sans Pro', sans-serif;
+  color: #005055;
+  padding: 7px 13px;
+  left: 3;
+}
+
+.lined-content {
+	width: 95%;
+	float:right;
+	height: 23px;
+	border-bottom: 2px solid #005055;
+	text-align: center;
+}
+
+.lined-content span {
+	font-size: 27px;
+	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png);
+	padding: 0 10px;
+	color: #005055;
+	float:left;
+	margin-left: -23px;
+}
+
+/*-------- TimeLine ---------*/
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 50%;
-/*  max-width: 1170px;*/
   float:left;
 
 }
-.cd-container::after {
-  /* clearfix */
-  content: '';
-  display: table;
-  clear: both;
-}
-/*-------*/
 
 #cd-timeline {
   position: relative;
@@ -222,398 +254,78 @@ h3 {
   /* this is the vertical line */
   content: '';
   position: absolute;
-  top: 0;
-  left: 7%;
-  height: 100%;
+  top: 7%;
+  left: 5%;
+  height: 90%;
   width: 3px;
   background: #005055;
 }
-@media only screen and (min-width: 1170px) {
-  #cd-timeline {
-    margin-top: 3em;
-    margin-bottom: 3em;
-  }
-  #cd-timeline::before {
-    left: 3;
-    margin-left: -2px;
-  }
-}
 
-.cd-timeline-block {
+.cd-timeline-block {                 /*** separates content boxes ***/     
   position: relative;
   margin: 2em 0;
 }
 
-.cd-timeline-block:after {
+.cd-timeline-block:after {           /*** separates content boxes ***/
   content: "";
   display: table;
   clear: both;
 }
-.cd-timeline-block:first-child {
-  margin-top: 0;
-}
-.cd-timeline-block:last-child {
-  margin-bottom: 0;
-}
-@media only screen and (min-width: 1170px) {
-  .cd-timeline-block {
-    margin: 4em 0;
-  }
-  .cd-timeline-block:first-child {
-    margin-top: 0;
-  }
-  .cd-timeline-block:last-child {
-    margin-bottom: 0;
-  }
-}
 
 .cd-timeline-img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 37px;
-  height: 37px;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 7%;
   box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
+
 .cd-timeline-img img {
   display: block;
   width: 37px;
   height: 37px;
   position: relative;
-  left: 7%;
-  top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
+  margin: 0 auto;
+  margin-top: 3px;
 }
+
 .cd-timeline-img.cd-completed {
   background: #005055;
 }
+
 .cd-timeline-img.cd-incomplete {
   background: #ffd46b;
 }
 
-/*@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 1170px) {            /** keeps img within timeline-img **/
   .cd-timeline-img {
     width: 43px;
     height: 43px;
     left: 7%;
-    margin-left: -30px;*/
-    /* Force Hardware Acceleration in WebKit 
+    margin-left: -30px;
+     Force Hardware Acceleration in WebKit 
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
-  .cssanimations .cd-timeline-img.is-hidden {
-    visibility: hidden;
-  }
-  .cssanimations .cd-timeline-img.bounce-in {
-    visibility: visible;
-    -webkit-animation: cd-bounce-1 0.6s;
-    -moz-animation: cd-bounce-1 0.6s;
-    animation: cd-bounce-1 0.6s;
-  }
-}
 
-@-webkit-keyframes cd-bounce-1 {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0.5);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale(1.2);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-  }
-}
-@-moz-keyframes cd-bounce-1 {
-  0% {
-    opacity: 0;
-    -moz-transform: scale(0.5);
-  }
-
-  60% {
-    opacity: 1;
-    -moz-transform: scale(1.2);
-  }
-
-  100% {
-    -moz-transform: scale(1);
-  }
-}
-@keyframes cd-bounce-1 {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
-    transform: scale(0.5);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  }
-}
 .cd-timeline-content {
   position: relative;
+  width: 200px;
+  height: 90px;
   float: left;
+  margin-left: 63px;
+  margin-top: -13px;
+  padding: 1.6em;
   background: white;
   border-radius: 0.25em;
-  padding: 1em;
   box-shadow: 0 3px 0 #d7e4ed;
 }
-.cd-timeline-content:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 .cd-timeline-content h2 {
-  color: #303e49;
+  color: #005055;
+  font-size: 25px;
+  margin-top: -3px;
 }
-.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  font-size: 13px;
-  font-size: 0.8125rem;
-}
-/*.cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-  display: inline-block;
-}*/
-.cd-timeline-content p {
-  margin: 1em 0;
-  line-height: 1.6;
-}
-.cd-timeline-content .cd-read-more {
-  float: right;
-  padding: .8em 1em;
-  background: #acb7c0;
-  color: white;
-  border-radius: 0.25em;
-}
-.no-touch .cd-timeline-content .cd-read-more:hover {
-  background-color: #bac4cb;
-}
-.cd-timeline-content .cd-date {
-  float: left;
-  padding: .8em 0;
-  opacity: .7;
-}
-/*.cd-timeline-content::before {
-  content: '';
-  position: absolute;
-  top: 16px;
-  right: 100%;
-  height: 0;
-  width: 0;
-  border: 7px solid transparent;
-  border-right: 7px solid white;
-}*/
-@media only screen and (min-width: 768px) {
-  .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
-  }
-  .cd-timeline-content p {
-    font-size: 16px;
-    font-size: 1rem;
-  }
-  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-    font-size: 14px;
-    font-size: 0.875rem;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-timeline-content {
-    float:right;
-    padding: 1.6em;
-    width: 45%;
-  }
-/*  .cd-timeline-content::before {
-    top: 24px;
-    left: 100%;
-    border-color: transparent;
-    border-left-color: white;
-  }*/
-
-/*  .cd-timeline-content .cd-read-more {
-    float: left;
-  }
-  */
-  .cd-timeline-content .cd-date {
-    position: absolute;
-    width: 100%;
-    left: 122%;
-    top: 6px;
-    font-size: 16px;
-    font-size: 1rem;
-  }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content {
-    float: right;
-  }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
-    top: 24px;
-    left: auto;
-    right: 100%;
-    border-color: transparent;
-    border-right-color: white;
-  }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
-    float: right;
-  }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
-    left: auto;
-    right: 122%;
-    text-align: right;
-  }
-  .cssanimations .cd-timeline-content.is-hidden {
-    visibility: hidden;
-  }
-  .cssanimations .cd-timeline-content.bounce-in {
-    visibility: visible;
-    -webkit-animation: cd-bounce-2 0.6s;
-    -moz-animation: cd-bounce-2 0.6s;
-    animation: cd-bounce-2 0.6s;
-  }
-}
-
-@media only screen and (min-width: 1170px) {
-  /* inverse bounce effect on even content blocks */
-  .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
-    -webkit-animation: cd-bounce-2-inverse 0.6s;
-    -moz-animation: cd-bounce-2-inverse 0.6s;
-    animation: cd-bounce-2-inverse 0.6s;
-  }
-}
-@-webkit-keyframes cd-bounce-2 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-100px);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translateX(20px);
-  }
-
-  100% {
-    -webkit-transform: translateX(0);
-  }
-}
-@-moz-keyframes cd-bounce-2 {
-  0% {
-    opacity: 0;
-    -moz-transform: translateX(-100px);
-  }
-
-  60% {
-    opacity: 1;
-    -moz-transform: translateX(20px);
-  }
-
-  100% {
-    -moz-transform: translateX(0);
-  }
-}
-@keyframes cd-bounce-2 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-100px);
-    -moz-transform: translateX(-100px);
-    -ms-transform: translateX(-100px);
-    -o-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translateX(20px);
-    -moz-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    -o-transform: translateX(20px);
-    transform: translateX(20px);
-  }
-
-  100% {
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-@-webkit-keyframes cd-bounce-2-inverse {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(100px);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translateX(-20px);
-  }
-
-  100% {
-    -webkit-transform: translateX(0);
-  }
-}
-@-moz-keyframes cd-bounce-2-inverse {
-  0% {
-    opacity: 0;
-    -moz-transform: translateX(100px);
-  }
-
-  60% {
-    opacity: 1;
-    -moz-transform: translateX(-20px);
-  }
-
-  100% {
-    -moz-transform: translateX(0);
-  }
-}
-@keyframes cd-bounce-2-inverse {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(100px);
-    -moz-transform: translateX(100px);
-    -ms-transform: translateX(100px);
-    -o-transform: translateX(100px);
-    transform: translateX(100px);
-  }
-
-  60% {
-    opacity: 1;
-    -webkit-transform: translateX(-20px);
-    -moz-transform: translateX(-20px);
-    -ms-transform: translateX(-20px);
-    -o-transform: translateX(-20px);
-    transform: translateX(-20px);
-  }
-
-  100% {
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0);
-  }
-}
-
 
 
 /******* CONTACT PAGE *******/
@@ -652,16 +364,18 @@ textarea {
 }
 
 .contact-content {
-	color: #005055;
-	width: 100%; 
-	height: 30px; 
+	width: 100%;
+	height: 30px;
 	border-bottom: 3px solid #005055;
+	text-align: center;
 }
 
 .contact-content span {
+	font-size: 35px;
 	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png) 50% 0 repeat fixed;
-	font-size: 35px; 
 	padding: 0 10px; 
+	color: #005055;
+	float: left;
 	margin-left: 30px;
 }
 
@@ -684,6 +398,7 @@ textarea {
 	color: #005055;
 	border-color: #005055;
 }
+
 	
 /******* SCROLL PAGES *******/
 #header h1, #pixels{
