@@ -135,6 +135,24 @@ h3 {
 	left: 3;
 }
 
+.social-media {
+	bottom: 1;
+}
+
+.social-media .btn{
+	background-color:#ffd46b;
+	border: 2px solid #005055;
+	max-height:50px; 
+	max-width:50px;
+	padding: 0;
+	margin: 30px 13px 0 13px;
+}
+
+.social-media img{
+	/*vertical-align: middle;*/
+	max-height:45px;
+	max-width: 45px;
+}
 
 /******* PORTFOLIO WORK GALLERY *******/
 
@@ -190,7 +208,7 @@ h3 {
     -moz-box-sizing:border-box;
 }
 .image:hover:after, .image:hover:before {
-    opacity:.8;
+    opacity:.9;
 }
 
 
@@ -460,7 +478,7 @@ textarea {
 }
 
 #fifth{
-	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png) 50% 0 repeat fixed;;
+	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png) 50% 0 repeat fixed;
 	height: 700px;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
@@ -478,6 +496,17 @@ textarea {
 	position: relative;
 	width: 350px;	
 }
+
+
+/**** FOOTER ****/
+
+footer {
+	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png) 50% 0 repeat fixed;
+	text-align: center;
+	font: 17px 'Source Sans Pro', sans-serif;
+  	color: #005055;
+}
+
 
 
 
