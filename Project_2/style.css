@@ -11,7 +11,7 @@
 
 .navbar {
 	position: sticky;
-	float: right;
+	float: left;
 	margin-top: 230px;
 	margin-left: 13px;
 	max-width: 73px;
@@ -89,7 +89,7 @@ h2{
 /******* ABOUT PAGE *******/
 .about {
 	position: relative;
-	background-image: url("file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png");
+	background: url(./img/grey.png);
 	background-repeat: repeat;
 	border-radius: 7px;
 	height: 500px;
@@ -247,7 +247,7 @@ h3 {
 
 .lined-content span {
 	font-size: 27px;
-	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png);
+	background: url(./img/grey.png);
 	padding: 0 10px;
 	color: #005055;
 	float:left;
@@ -390,7 +390,7 @@ textarea {
 
 .contact-content span {
 	font-size: 35px;
-	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png) 50% 0 repeat fixed;
+	background: url(./img/grey.png) 50% 0 repeat fixed;
 	padding: 0 10px; 
 	color: #005055;
 	float: left;
@@ -445,7 +445,7 @@ textarea {
 }
 
 #intro{
-	background:url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/intro1.png) 50% 0 no-repeat fixed;
+	background:url(./img/intro1.png) 50% 0 no-repeat fixed;
 	color: white;
 	height: 700px;
 /*	width: 100%;*/
@@ -454,7 +454,7 @@ textarea {
 }
 
 #second{
-	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/intro1.png) 50% 0 no-repeat fixed;
+	background: url(./img/intro1.png) 50% 0 no-repeat fixed;
 	color: white;
 	height: 750px;
 	margin: 0 auto;
@@ -464,21 +464,21 @@ textarea {
 
 
 #third{
-	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/pegboard.jpg) 50% 0 repeat fixed;
+	background: url(./img/pegboard.jpg) 50% 0 repeat fixed;
 	color: white;
 	height: 750px;
 	padding: 15px 0 0 0;	
 }
 
 #fourth{
-	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png) 50% 0 repeat fixed;;
+	background: url(./img/grey.png) 50% 0 repeat fixed;;
 	height: 100%;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
 }
 
 #fifth{
-	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png) 50% 0 repeat fixed;
+	background: url(./img/grey.png) 50% 0 repeat fixed;
 	height: 700px;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
@@ -501,7 +501,7 @@ textarea {
 /**** FOOTER ****/
 
 footer {
-	background: url(file:///Users/nicolas/Documents/Programming/FreeCodeCamp/Project_2/img/grey.png) 50% 0 repeat fixed;
+	background: url(./img/grey.png) 50% 0 repeat fixed;
 	text-align: center;
 	font: 17px 'Source Sans Pro', sans-serif;
   	color: #005055;
