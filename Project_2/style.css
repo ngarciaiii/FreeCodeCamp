@@ -61,21 +61,13 @@ p{
 p, ul{
 	font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-size: 21px;
-	/*font-weight:200;
-	font-style:normal;*/
+
 }
 
 img{
 	border: 0;
 }
 
-/*h1 {
-	font-family:'Source Sans Pro', sans-serif;
-	font-size: 53px;
-	font-size-adjust:0.40;
-	font-weight:700;
-	font-style:normal;
-}*/
 
 h2{
 	font-family:"Beau Sans Pro Book", Verdana, sans-serif;
@@ -89,7 +81,7 @@ h2{
 /******* ABOUT PAGE *******/
 .about {
 	position: relative;
-	background: url(./img/grey.png);
+	background: url("./img/grey.png");
 	background-repeat: repeat;
 	border-radius: 7px;
 	height: 500px;
@@ -214,27 +206,29 @@ h3 {
 
 /******* RESUME PAGE *********/
 
-.two-col section, aside, {
+/*s section, aside, {
   margin: 0 1.5% 24px 1.5%;
 }
 
 .two-col section {
   float: left;
   width: 45%;
+}*/
+.first-col {
+	/*float: right;*/
 }
 
-.two-col aside {
-  float: right;
-  width: 55%;
-  margin-top: 69px;
+.second-col {
+	/*float: left;*/
+ 	margin-top: 61px;
 }
 
-.two-col aside p {
-  text-align: left;
-  font: 23px/35px 'Source Sans Pro', sans-serif;
-  color: #005055;
-  padding: 7px 13px;
-  left: 3;
+.second-col p {
+	text-align: left;
+	font: 23px/35px 'Source Sans Pro', sans-serif;
+	color: #005055;
+ /* padding: 7px 13px;
+  left: 3;*/
 }
 
 .lined-content {
@@ -247,20 +241,19 @@ h3 {
 
 .lined-content span {
 	font-size: 27px;
-	background: url(./img/grey.png);
-	padding: 0 10px;
+	background: url("./img/grey.png");
+	padding: 0 5px;
 	color: #005055;
 	float:left;
-	margin-left: -23px;
+	margin-left: -29px;
 }
 
 /*-------- TimeLine ---------*/
-.cd-container {
+/*.cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 50%;
+  /*width: 50%;
   float:left;
-
-}
+} */
 
 #cd-timeline {
   position: relative;
@@ -315,8 +308,8 @@ h3 {
   background: #ffd46b;
 }
 
-@media only screen and (min-width: 1170px) {            /** keeps img within timeline-img **/
-  .cd-timeline-img {
+/*@media only screen and (min-width: 1170px) {            /** keeps img within timeline-img **/
+  /*.cd-timeline-img {
     width: 43px;
     height: 43px;
     left: 7%;
@@ -324,7 +317,7 @@ h3 {
      Force Hardware Acceleration in WebKit 
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
-  }
+  }*/
 
 .cd-timeline-content {
   position: relative;
@@ -390,7 +383,7 @@ textarea {
 
 .contact-content span {
 	font-size: 35px;
-	background: url(./img/grey.png) 50% 0 repeat fixed;
+	background: url("./img/grey.png") 50% 0 repeat fixed;
 	padding: 0 10px; 
 	color: #005055;
 	float: left;
@@ -446,9 +439,9 @@ textarea {
 
 #intro{
 	background:url(./img/intro1.png) 50% 0 no-repeat fixed;
+	width:100%;
 	color: white;
 	height: 700px;
-/*	width: 100%;*/
 	margin: 0 auto;
 	padding: 0;
 }
@@ -456,7 +449,7 @@ textarea {
 #second{
 	background: url(./img/intro1.png) 50% 0 no-repeat fixed;
 	color: white;
-	height: 750px;
+	height: 900px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
@@ -471,7 +464,7 @@ textarea {
 }
 
 #fourth{
-	background: url(./img/grey.png) 50% 0 repeat fixed;;
+	background: url(./img/grey.png) 50% 0 repeat fixed;
 	height: 100%;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
@@ -501,24 +494,137 @@ textarea {
 /**** FOOTER ****/
 
 footer {
-	background: url(./img/grey.png) 50% 0 repeat fixed;
+	background: url("./img/grey.png") 50% 0 repeat fixed;
 	text-align: center;
 	font: 17px 'Source Sans Pro', sans-serif;
   	color: #005055;
 }
 
 
+/********** MOBILE FRIENDLY *******/
+
+/* For Regular Smart Phones */
+/* Portrait */
+/*@media only screen 
+  and (min-width: 240px) 
+  and (max-width: 375px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+		#intro {
+  			background:url(".img/smaller-intro1.png") 50% 0 no-repeat center fixed;
+			background-size: 100%;
+			width:100%;
+			height:100%;
+  		}
+
+}
+
+
+/* Landscape */
+/*@media only screen (min-width: 320px) 
+	and (max-width: 670px) 
+	and (orientation: landscape) 
+	and (-webkit-min-device-pixel-ratio: 2) {
+
+		#intro {
+  			background:url ("./img/intro1.png") 50% 0 no-repeat center fixed;
+			background-size: 100%;
+			width: 100%;
+			height: 100%;
+  		}
+
+}
+
+
+/* For iPhones 6 */
+/* Portrait */
+@media only screen (min-width : 375px) 
+	and (max-width : 667px) 
+	and (width : 375px) 
+	and (height : 559px) 
+	and (orientation : portrait) 
+	and (color : 8) and (device-aspect-ratio : 375/667) 
+	and (aspect-ratio : 375/559) 
+	and (device-pixel-ratio : 2) 
+	and (-webkit-min-device-pixel-ratio : 2){
+		#intro{
+			height:1200px;
+		}
+		#second{
+			height: 600px;
+		}
+
+}
+
+/* Landscape */
+@media only screen 
+    and (min-width : 375px) // or 213.4375em or 3in or 9cm
+    and (max-width : 667px) // or 41.6875em
+    and (width : 667px) // or 41.6875em
+    and (height : 375px) // or 23.4375em
+    and (orientation : landscape) 
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 667/375)
+    and (device-pixel-ratio : 2)
+    and (-webkit-min-device-pixel-ratio : 2) {
+		#intro{
+			height:600px;
+		}
+		#second{
+			height: 600px;
+		}
+}
 
 
 
 
 
+/* For Small Phones (END) */
+/* For Big Smart Phones like IPhone Plus */
+/* Portrait */
+
+/*@media only screen 
+  and (min-width: 414px) 
+  and (max-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+	/*  #intro {
+  			background:url(./img/intro1.png) 50% 0 no-repeat fixed;
+  			background-size: 150px;
+  		}*/
+}
 
 
 
+/* Landscape */
+/*@media only screen 
+  and (min-width: 414px) 
+  and (max-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+	/*	#intro {
+  			background:url(./img/intro1.png) 50% 0 no-repeat fixed;
+  			background-size: 150px;
+  		}*/
+
+}
 
 
-
+/* For Big Phones (END) */
+/* For IPads and Other Tablets */
+/* Portrait */
+/*@media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+		/*#intro {
+  			background:url(./img/intro1.png) 50% 0 no-repeat fixed;
+  			background-size: 150px;
+  		}
+*/
+}
 
 
 

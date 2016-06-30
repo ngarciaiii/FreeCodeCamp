@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" name="viewport" content="width=370, initial-scale=1.0, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Unflustered Studio</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--   <meta name="meta name="viewport" content="width=device-width, initial-scale=1.0> -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two"/>
-  <link href='style.css' rel='stylesheet'>
-  <!-- <link rel="stylesheet" href="css/reset.css"> -->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
- <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
-  <script type="text/javascript" src="scripts/jquery.localscroll-1.2.7-min.js"></script> 
- <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script> 
-  <script src="js/main.js"></script>
+  <link rel="stylesheet" type="text/css" href='style.css'>
 </head>
 
 <body>
 
 <!-- NavBar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container col-md-1 btn-group-vertical" role="group" aria-label="...">
+<div class="navbar navbar-default navbar-fixed-top hidden-xs" role="navigation">
+  <div class="col-md-1" role="navigation" aria-label="...">
     <a href="#intro" title="Next Section"><button type="button" class="btn btn-default btn-md navbar-btn" aria-label="Home" data-toggle="tooltip" data-placement="right" title="HOME"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
     </button></a>
     <a href="#second" title="Next Section"><button type="button" class="btn btn-default btn-md navbar-btn" aria-label="About" data-toggle="tooltip" data-placement="right" title="ABOUT"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
@@ -111,27 +103,7 @@
   <div class="story">
       <div class="float-center">
           <h1 class="text-center" style="color:#005055;">Development Skills</h1>
-            <div class="two-col">
-              <aside>
-                <p>Languages and frameworks on the timeline are what I will be learning in FreeCodeCamp course online. I expect to build all these skills within few next months, and continue to polish my skills. Filled stars represents my current skill level.</p><p>I have some basic skills before starting with FreeCodeCamp. I dabbled with CodeAcademy, Treehouse, and Eloquent JavaScript online. Python was my first language and I do miss it. Please take a look at the listing below on what languages and frameworks I <font color="#005055">learned</font> and <font color="#ffd46b">will be learning</font> before I become a full-stack developer or... a wizard!</p>
-                <div class="lined-content">
-                  <span><strong>Languages</strong></span>
-                </div><br></br>
-                <p>Python &nbsp;&nbsp; HTML &nbsp;&nbsp; CSS  &nbsp;&nbsp; JavaScript &nbsp;&nbsp;<font color="#ffd46b">Ruby &nbsp;&nbsp; Java &nbsp;&nbsp; C++ </font></p>
-                <div class="lined-content">
-                  <span><strong>Frameworks</strong></span>
-                </div><br></br>
-                <p>Bootstrap &nbsp;&nbsp; <font color="#ffd46b">React &nbsp;&nbsp; Angular &nbsp;&nbsp; Meteor &nbsp;&nbsp; Django &nbsp;&nbsp; Flask</font></p>
-                <div class="lined-content">
-                  <span><strong>Databases</strong></span>
-                </div><br></br>
-                <p><font color="#ffd46b">Mongo &nbsp;&nbsp; MySQL &nbsp;&nbsp; Oracle</font></p>
-                <div class="lined-content">
-                  <span><strong>Other/Misc</strong></span>
-                </div><br></br>
-                <p>Git &nbsp;&nbsp;<font color="#ffd46b">Jekyll &nbsp;&nbsp; jQuery &nbsp;&nbsp; D3 &nbsp;&nbsp; Sass  &nbsp;&nbsp; AJAX  &nbsp;&nbsp; Wordpress</font></p>
-              </aside>
-              <section id="cd-timeline" class="cd-container">
+            <div id="cd-timeline" class="col-xs-6 col-md-6 cd-container first-col">
                 <div class="cd-timeline-block">
                   <div class="cd-timeline-img cd-completed">
                      <img src="./img/html.png" alt="Picture">
@@ -212,8 +184,26 @@
                     <h2>Mongo DB</h2><h2 style="color: #ffd46b;">&#x2729 &#x2729 &#x2729 &#x2729 &#x2729</h2>
                   </div> <!-- cd-timeline-content -->
                 </div> <!-- cd-timeline-block -->
-              </section> <!-- cd-timeline -->
-           </div>
+            </div> <!-- cd-timeline -->
+            <div class="col-xs-6 col-md-6 second-col">
+                <p>Languages and frameworks on the timeline are what I will be learning in FreeCodeCamp course online. I expect to build all these skills within few next months, and continue to polish my skills. Filled stars represents my current skill level.</p><p>I have some basic skills before starting with FreeCodeCamp. I dabbled with CodeAcademy, Treehouse, and Eloquent JavaScript online. Python was my first language and I do miss it. Please take a look at the listing below on what languages and frameworks I <font color="#005055">learned</font> and <font color="#ffd46b">will be learning</font> before I become a full-stack developer or... a wizard!</p>
+                <div class="lined-content">
+                  <span><strong>Languages</strong></span>
+                </div><br></br>
+                <p>Python &nbsp;&nbsp; HTML &nbsp;&nbsp; CSS  &nbsp;&nbsp; JavaScript &nbsp;&nbsp;<font color="#ffd46b">Ruby &nbsp;&nbsp; Java &nbsp;&nbsp; C++ </font></p>
+                <div class="lined-content">
+                  <span><strong>Frameworks</strong></span>
+                </div><br></br>
+                <p>Bootstrap &nbsp;&nbsp; <font color="#ffd46b">React &nbsp;&nbsp; Angular &nbsp;&nbsp; Meteor &nbsp;&nbsp; Django &nbsp;&nbsp; Flask</font></p>
+                <div class="lined-content">
+                  <span><strong>Databases</strong></span>
+                </div><br></br>
+                <p><font color="#ffd46b">Mongo &nbsp;&nbsp; MySQL &nbsp;&nbsp; Oracle</font></p>
+                <div class="lined-content">
+                  <span><strong>Other/Misc</strong></span>
+                </div><br></br>
+                <p>Git &nbsp;&nbsp;<font color="#ffd46b">Jekyll &nbsp;&nbsp; jQuery &nbsp;&nbsp; D3 &nbsp;&nbsp; Sass  &nbsp;&nbsp; AJAX  &nbsp;&nbsp; Wordpress</font></p>
+            </div>
         </div>
     </div> <!--.story-->
 </div> <!--#fourth-->
@@ -253,5 +243,8 @@
   <br></br>
   <p>&copy;2016 Nicolas Garcia. All rights reserved.</p>
 </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
