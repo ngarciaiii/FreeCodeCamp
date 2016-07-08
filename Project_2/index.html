@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" name="viewport" content="width=370, initial-scale=1.0, maximum-scale=1">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Unflustered Studio</title>
   <meta name="description" content="">
@@ -35,10 +35,9 @@
 <!-- Webpage -->
 <div id="intro">
   <div class="story">
-    <div class=" top-hdr float-center margin-left">
+    <div class="top-hdr">
       <h1>Flustered?</h1>
       <p class="larger-font-size"> Got an idea but no web skills? <br>Have web skills, but lack creativity?</br> Need extra team member?</p><p class="larger-font-size">Scroll down for the solution</p>
-
     </div>
   </div> <!--.story-->
 </div> <!--#intro-->
@@ -103,7 +102,7 @@
   <div class="story">
       <div class="float-center">
           <h1 class="text-center" style="color:#005055;">Development Skills</h1>
-            <div id="cd-timeline" class="col-xs-6 col-md-6 cd-container first-col">
+            <div id="cd-timeline" class="col-xs-4 col-md-4">
                 <div class="cd-timeline-block">
                   <div class="cd-timeline-img cd-completed">
                      <img src="./img/html.png" alt="Picture">
@@ -185,7 +184,7 @@
                   </div> <!-- cd-timeline-content -->
                 </div> <!-- cd-timeline-block -->
             </div> <!-- cd-timeline -->
-            <div class="col-xs-6 col-md-6 second-col">
+            <div class="col-xs-6 col-md-6 right-col">
                 <p>Languages and frameworks on the timeline are what I will be learning in FreeCodeCamp course online. I expect to build all these skills within few next months, and continue to polish my skills. Filled stars represents my current skill level.</p><p>I have some basic skills before starting with FreeCodeCamp. I dabbled with CodeAcademy, Treehouse, and Eloquent JavaScript online. Python was my first language and I do miss it. Please take a look at the listing below on what languages and frameworks I <font color="#005055">learned</font> and <font color="#ffd46b">will be learning</font> before I become a full-stack developer or... a wizard!</p>
                 <div class="lined-content">
                   <span><strong>Languages</strong></span>
@@ -236,15 +235,26 @@
         <div class="submit">
           <input type="submit" value="SEND" id="button-blue"/>
         </div>
+        <br></br>
     </form>
   </div> <!--.story-->
 </div> <!--#fifth-->
-<footer>
+
+<div class="mobile-navbar hidden-md hidden-lg">
+    <a href="#intro" title="Next Section"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+    <a href="#second" title="Next Section"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+    <a href="#third" title="Next Section"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></a>
+    <a href="#fourth" title="Next Section"><span class="glyphicon glyphicon-education" aria-hidden="true"></span></a>
+    <a href="#fifth" title="Next Section"><span class="glyphicon glyphicon-send" aria-hidden="true"></span></a>
+</div>
+
+<footer class="hidden-xs">
   <br></br>
   <p>&copy;2016 Nicolas Garcia. All rights reserved.</p>
 </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

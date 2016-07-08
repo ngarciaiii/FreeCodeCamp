@@ -1,6 +1,7 @@
 /******* TOP *******/
 .top-hdr {
 	margin-top: 19px;
+	margin-left: 19px;
 }
 
 .larger-font-size {
@@ -36,6 +37,24 @@
 
 .tooltip {
 	font-size: 27px; 
+}
+
+/****** FOOTER MOBILE NAVBAR *****/
+
+.mobile-navbar {
+	bottom: 0;
+	margin: 0;
+	position: fixed;
+	width: 100%;
+	height:10%;
+	background-color: #ffd46b;
+	text-align: center;
+}
+
+.mobile-navbar .glyphicon {
+    font-size: 500%;
+    margin: 60px;
+	color: #005055;
 }
 
 /******* GENERAL *******/        
@@ -205,30 +224,18 @@ h3 {
 
 
 /******* RESUME PAGE *********/
-
-/*s section, aside, {
-  margin: 0 1.5% 24px 1.5%;
+.right-col {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  margin-left: 3em;
 }
 
-.two-col section {
-  float: left;
-  width: 45%;
-}*/
-.first-col {
-	/*float: right;*/
-}
-
-.second-col {
-	/*float: left;*/
- 	margin-top: 61px;
-}
-
-.second-col p {
+.right-col p {
 	text-align: left;
 	font: 23px/35px 'Source Sans Pro', sans-serif;
 	color: #005055;
- /* padding: 7px 13px;
-  left: 3;*/
 }
 
 .lined-content {
@@ -249,17 +256,13 @@ h3 {
 }
 
 /*-------- TimeLine ---------*/
-/*.cd-container {
-  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  /*width: 50%;
-  float:left;
-} */
 
-#cd-timeline {
+#cd-timeline {							/**** left column *****/
   position: relative;
   padding: 2em 0;
   margin-top: 2em;
   margin-bottom: 2em;
+  margin-left: 3em;
 }
 #cd-timeline::before {
   /* this is the vertical line */
@@ -293,8 +296,8 @@ h3 {
 
 .cd-timeline-img img {
   display: block;
-  width: 37px;
-  height: 37px;
+  width: 43px;
+  height: 43px;
   position: relative;
   margin: 0 auto;
   margin-top: 3px;
@@ -307,17 +310,6 @@ h3 {
 .cd-timeline-img.cd-incomplete {
   background: #ffd46b;
 }
-
-/*@media only screen and (min-width: 1170px) {            /** keeps img within timeline-img **/
-  /*.cd-timeline-img {
-    width: 43px;
-    height: 43px;
-    left: 7%;
-    margin-left: -30px;
-     Force Hardware Acceleration in WebKit 
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-  }*/
 
 .cd-timeline-content {
   position: relative;
@@ -439,17 +431,22 @@ textarea {
 
 #intro{
 	background:url(./img/intro1.png) 50% 0 no-repeat fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-origin: center;
 	width:100%;
 	color: white;
 	height: 700px;
 	margin: 0 auto;
+	overflow:hidden;
 	padding: 0;
 }
 
 #second{
 	background: url(./img/intro1.png) 50% 0 no-repeat fixed;
+	background-size: cover;
 	color: white;
-	height: 900px;
+	height: 800px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
@@ -459,7 +456,7 @@ textarea {
 #third{
 	background: url(./img/pegboard.jpg) 50% 0 repeat fixed;
 	color: white;
-	height: 750px;
+	height: 800px;
 	padding: 15px 0 0 0;	
 }
 
@@ -503,21 +500,20 @@ footer {
 
 /********** MOBILE FRIENDLY *******/
 
+/*@media only screen 
+	and (min-device-width: 240px)
+	and (max-device-width: 375px)
+	and (-webkit-min-device-pixel-ratio: 2) 
+	and (orientation: portrait) {
+	  	
+	  	#intro #second{ 
+	   	background-size: auto 100%;
+	   	background-position: center;
+	  	}
+}
+
 /* For Regular Smart Phones */
 /* Portrait */
-/*@media only screen 
-  and (min-width: 240px) 
-  and (max-width: 375px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-		#intro {
-  			background:url(".img/smaller-intro1.png") 50% 0 no-repeat center fixed;
-			background-size: 100%;
-			width:100%;
-			height:100%;
-  		}
-
-}
 
 
 /* Landscape */
@@ -538,7 +534,7 @@ footer {
 
 /* For iPhones 6 */
 /* Portrait */
-@media only screen (min-width : 375px) 
+/*@media only screen (min-width : 375px) 
 	and (max-width : 667px) 
 	and (width : 375px) 
 	and (height : 559px) 
@@ -554,10 +550,10 @@ footer {
 			height: 600px;
 		}
 
-}
+}*/
 
 /* Landscape */
-@media only screen 
+/*@media only screen 
     and (min-width : 375px) // or 213.4375em or 3in or 9cm
     and (max-width : 667px) // or 41.6875em
     and (width : 667px) // or 41.6875em
@@ -574,7 +570,7 @@ footer {
 		#second{
 			height: 600px;
 		}
-}
+}*/
 
 
 
