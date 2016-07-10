@@ -1,10 +1,11 @@
+
 /******* TOP *******/
 .top-hdr {
 	margin-top: 19px;
 	margin-left: 19px;
 }
 
-.larger-font-size {
+.top-hdr p {
 	font-size: 27px;
 }
 
@@ -505,129 +506,130 @@ footer {
 
 
 /********** MOBILE FRIENDLY *******/
+/*  Small or Regular Phones  */
+/* Portrait */
 
-/*@media only screen 
+@media only screen 
 	and (min-device-width: 240px)
 	and (max-device-width: 375px)
 	and (-webkit-min-device-pixel-ratio: 2) 
 	and (orientation: portrait) {
-	  	
-	  	#intro #second{ 
-	   	background-size: auto 100%;
-	   	background-position: center;
-	  	}
+		.top-hdr{
+			margin-top: 50px;
+			margin-left: 50px;
+		}
+
+		.top-hdr h1{
+			font-size: 90px;
+		}
+
+		.top-hdr p{
+			font-size: 45px;
+			line-height: 100%;
+			font-weight: bold;
+		}
+
+		#intro {
+			background:url(./img/intro1.png) 50% 0 no-repeat fixed;
+			background-size: 275%;
+			height: 1495px;
+		}
+
+		#second {
+			background: url(./img/intro1.png) 50% 0 no-repeat fixed;
+			background-size: 275%;
+			height: 1500px;
+		}
 }
 
 /* For Regular Smart Phones */
 /* Portrait */
-
-
 /* Landscape */
-/*@media only screen (min-width: 320px) 
+
+@media only screen (min-width: 320px) 
 	and (max-width: 670px) 
 	and (orientation: landscape) 
 	and (-webkit-min-device-pixel-ratio: 2) {
-
-		#intro {
-  			background:url ("./img/intro1.png") 50% 0 no-repeat center fixed;
-			background-size: 100%;
-			width: 100%;
-			height: 100%;
-  		}
 
 }
 
 
 /* For iPhones 6 */
 /* Portrait */
-/*@media only screen (min-width : 375px) 
+@media only screen (min-width : 375px) 
 	and (max-width : 667px) 
 	and (width : 375px) 
 	and (height : 559px) 
 	and (orientation : portrait) 
-	and (color : 8) and (device-aspect-ratio : 375/667) 
 	and (aspect-ratio : 375/559) 
 	and (device-pixel-ratio : 2) 
 	and (-webkit-min-device-pixel-ratio : 2){
-		#intro{
-			height:1200px;
+		/* .mobile-navbar {
+			background-color: #ff0000;
 		}
-		#second{
-			height: 600px;
-		}
-
-}*/
+}
 
 /* Landscape */
-/*@media only screen 
-    and (min-width : 375px) // or 213.4375em or 3in or 9cm
-    and (max-width : 667px) // or 41.6875em
-    and (width : 667px) // or 41.6875em
-    and (height : 375px) // or 23.4375em
+@media only screen 
+    and (min-width : 375px)
+    and (max-width : 667px)
+    and (width : 667px) 
+    and (height : 375px)
     and (orientation : landscape) 
-    and (color : 8)
-    and (device-aspect-ratio : 375/667)
-    and (aspect-ratio : 667/375)
     and (device-pixel-ratio : 2)
     and (-webkit-min-device-pixel-ratio : 2) {
-		#intro{
-			height:600px;
-		}
-		#second{
-			height: 600px;
-		}
-}*/
-
-
-
-
-
-/* For Small Phones (END) */
-/* For Big Smart Phones like IPhone Plus */
-/* Portrait */
-
-/*@media only screen 
-  and (min-width: 414px) 
-  and (max-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-	/*  #intro {
-  			background:url(./img/intro1.png) 50% 0 no-repeat fixed;
-  			background-size: 150px;
-  		}*/
+ 
 }
 
+
+
+
+
+/* For Big Smart Phones like IPhone Plus */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+  	.mobile-navbar {
+			background-color: #ff0000;
+		}
 
 
 /* Landscape */
-/*@media only screen 
+@media only screen 
   and (min-width: 414px) 
   and (max-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-	/*	#intro {
-  			background:url(./img/intro1.png) 50% 0 no-repeat fixed;
-  			background-size: 150px;
-  		}*/
+  and (orientation: landscape) {
 
 }
 
 
-/* For Big Phones (END) */
+
 /* For IPads and Other Tablets */
 /* Portrait */
-/*@media only screen 
+@media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) {
-		/*#intro {
-  			background:url(./img/intro1.png) 50% 0 no-repeat fixed;
-  			background-size: 150px;
-  		}
-*/
+  	.mobile-navbar {
+			background-color: #ff0000;
+		}
+
 }
 
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1){
+
+
+  }
 
 
 
