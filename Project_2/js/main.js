@@ -5,7 +5,39 @@ $(document).ready(function(){
 	// $('#intro').parallax("50%", 0.1);
 	// $('#second').parallax("50%", 0.1);
 	// $('#third').parallax("50%", 0.3);
-  
+  	
+	// Create cross browser requestAnimationFrame method:
+	window.requestAnimationFrame = window.requestAnimationFrame
+	                               || window.mozRequestAnimationFrame
+	                               || window.webkitRequestAnimationFrame
+	                               || window.msRequestAnimationFrame
+	                               || function(f){setTimeout(f, 1000/60)}
+
+	var second = document.getElementById('second')
+	var third = document.getElementById('third')
+	var fourth = document.getElementById('fourth')
+
+	var scrollheight = 	document.body.scrollHeight // height of entire document
+	var windowheight = window.innerHeight // height of browser window
+
+
+	function pagescroll(){
+		var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
+		var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // get amount scrolled (in %)
+		second.style.top = -scrolltop * .3 + 'px' // move bubble1 at 20% of scroll speed
+		third.style.top = -scrolltop * .3 + 'px' // move bubble2 at 50% of scroll speed
+		fourth.style.top = -scrolltop * .3 + 'px'
+
+	}
+
+	window.addEventListener('scroll', function(){ // on page scroll
+		requestAnimationFrame(pagescroll) // call pagescroll() on next available screen repaint
+	}, false)
+
+	window.addEventListener('resize', function(){ // on window resize
+		var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100 // get amount scrolled (in %)
+	}, false)
+
 });
 
 

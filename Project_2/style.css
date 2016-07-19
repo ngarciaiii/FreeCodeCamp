@@ -47,7 +47,7 @@
 	margin: 0;
 	position: fixed;
 	width: 100%;
-	height:11%;
+	height:170px;
 	background-color: #ffd46b;
 	text-align: center;
 }
@@ -59,6 +59,17 @@
 }
 
 /******* GENERAL *******/        
+/*html, body {
+	max-width: 100%;
+}
+
+html {
+	margin: 0 auto;
+    max-width: auto;
+	width: 100%;
+	height: 100%;
+}*/
+
 h1 {
 	font-family:'Source Sans Pro', sans-serif;
 	font-size: 57px;
@@ -68,7 +79,7 @@ h1 {
 }
 
 body{
-	margin: 0;
+	margin: 0 0;
 	min-width: 980px;
 	padding: 0;
 	overflow-x:hidden;
@@ -356,13 +367,18 @@ textarea {
 	border-radius: 3px;
 	margin-bottom: 30px;
 }
-
-#name {
-	margin-right: 50px;
+.wrapper {
+	margin: 0 auto;
 }
 
-#email {
-	margin-left: 50px;
+.nameGroup {
+	margin-left: 15px;
+	float:left;
+}
+
+.emailGroup {
+	margin-left: 42px;
+	float: left;
 }
 
 #message {
@@ -469,7 +485,7 @@ textarea {
 
 #fourth{
 	background: url(./img/grey.png) 50% 0 repeat fixed;
-	 height: 100%;
+	height: 100%;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
 }
@@ -530,59 +546,55 @@ footer {
 		}
 
 		#intro {
-			background:url(./img/intro1.png) 50% 0 no-repeat fixed;
+			background:url(./img/intro1.png) 50% 0 no-repeat;
+			background-attachment: fixed;
 			background-size: 275%;
 			height: 1495px;
+			top:0;
 		}
 
 		#second {
-			background: url(./img/intro1.png) 50% 0 no-repeat fixed;
-			background-size: 275%;
-			height: 1500px;
+			background: #ffd46b;
+			height: 900px;
+			width: 100%;
+		}
+
+		#second .story {
+			margin-top: 50px;
+		}
+
+		.about {
+			border-color: #005055;
+			border-style: solid;
+			border-width: 7px;
+			height: 550px;
+		}
+
+		#fifth {
+			margin-bottom: 150px;
 		}
 }
 
 /* For Regular Smart Phones */
 /* Portrait */
 /* Landscape */
-
-@media only screen (min-width: 320px) 
-	and (max-width: 670px) 
-	and (orientation: landscape) 
-	and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-
-/* For iPhones 6 */
-/* Portrait */
-@media only screen (min-width : 375px) 
-	and (max-width : 667px) 
-	and (width : 375px) 
-	and (height : 559px) 
-	and (orientation : portrait) 
-	and (aspect-ratio : 375/559) 
-	and (device-pixel-ratio : 2) 
-	and (-webkit-min-device-pixel-ratio : 2){
-		/* .mobile-navbar {
-			background-color: #ff0000;
-		}
-}
-
-/* Landscape */
 @media only screen 
-    and (min-width : 375px)
-    and (max-width : 667px)
-    and (width : 667px) 
-    and (height : 375px)
+    and (min-device-width : 375px) // or 213.4375em or 3in or 9cm
+    and (max-device-width : 667px) // or 41.6875em
+    and (width : 667px) // or 41.6875em
+    and (height : 375px) // or 23.4375em
     and (orientation : landscape) 
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 667/375)
     and (device-pixel-ratio : 2)
-    and (-webkit-min-device-pixel-ratio : 2) {
- 
+    and (-webkit-min-device-pixel-ratio : 2) { 
+    	.mobile-navbar {
+    		background-color: #ff0000;
+    	}
+    }
+
 }
-
-
-
 
 
 /* For Big Smart Phones like IPhone Plus */
