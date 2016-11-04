@@ -20,6 +20,7 @@ function factorialize(num) {
   var product = 1;                   // set a variable to equal to 1
   for (var i = num; i > 0; i--) {    // i loops backward from 5 to 1
     product *= i;                    // product multiples i and then product becomes the new product
+    // i * product = product
     // 5 * 1 = 5
     // 4 * 5 = 20
     // 3 * 20 = 60
