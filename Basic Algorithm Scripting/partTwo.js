@@ -19,19 +19,17 @@ findLongestWord("The quick brown fox jumped over the lazy dog");
 //Title Case a Sentence
 
 function titleCase(str) {
-  var strLoAr= str.toLowerCase().split(" ");              // lowercase all letters then arraize them 
+  var strLoAr= str.toLowerCase().split(" ");          // lowercase all letters then arraize them 
   var capped;
   var fixed;
   var titled = [];
-  console.log(strLoAr);                                   // [ 'i\'m', 'a', 'little', 'tea', 'pot' ]
-  for (var i = 0; i < strLoAr.length; i++) {              // loops through strLoAr array with indexes  
-  	for (var j = 0; j < strLoAr[i].length; j++) {         // loops through each element using j indexes
-  		if (j === 0) {                                      // if j index is 0
-  			fixed = strLoAr[i].slice(1);                      // removes first letter of each elements
-  			capped = strLoAr[i][j].toUpperCase();	            // extracts only the first letter from each element and captialize
-  		}
-  	} titled.push(capped + fixed);                        // add to new array, concatenate capped with fixed
-  } return titled.join(" ");                              // turn an array back into a string
+  console.log(strLoAr);                               // [ 'i\'m', 'a', 'little', 'tea', 'pot' ]
+  for (var i = 0; i < strLoAr.length; i++) {          // loops through strLoAr array with indexes                            
+    fixed = strLoAr[i].slice(1);                      // removes first letter of each word
+    capped = strLoAr[i][0].toUpperCase();             // extracts only the first letter from each word and captialize
+    titled.push(capped + fixed);                      // add to new array, concatenate capped with fixed
+  }
+    return titled.join(" ");
 } 
 
 titleCase("I'm a little tea pot");
