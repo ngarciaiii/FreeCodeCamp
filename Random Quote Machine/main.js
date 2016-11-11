@@ -4,7 +4,8 @@ var colors = [ '#F49AC2', '#CB99C9', '#E84751', '#C23B22', '#FFD1DC', '#DEA5A4',
 
 
 
-$("#change-color").click(function(){ 
+$("#button").click(function(){ 
     $("body").css("backgroundColor", colors[i]);
+    $("button").css("backgroundColor", colors[i]);
     i = (i==colors.length-1) ? 0 : (i+1);
 });
