@@ -1,27 +1,53 @@
 body{
-	background-color: #AEC6CF;
+	background-color: #0000E5;
 	height: 100%; 
 	width: 100%; 
 	position: absolute;
 	-webkit-transition:1.5s;
 }
 
+.header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 130px;
+    font-size-adjust:0.40;
+    font-weight:700;
+    font-style:normal;
+    color: white;
+
+    display:table;
+    margin: 0 auto;
+}
+
 .box {
 	height: 350px;
-	width: 600px;
+	width: 700px;
 	background-color: #FFFFFF;
-	border-radius: 3px;
+    border: 7px solid;
+    border-color: red;
 	
-	position: absolute;
-    top:0;
+	position: fixed;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
 }
 
+#message {
+    font-family: 'Slabo', serif;
+    font-size: 35px;
+    font-style:normal;
+    color: black;
+
+    vertical-align: middle;
+    text-align: center;
+    margin: auto 0;
+
+
+}
+
 button {
-	background-color: #AEC6CF;
+	background-color: #0000E5;
 	border: none;
     border-radius: 3px;
     width: 130px;
@@ -40,7 +66,7 @@ button {
 }
 
 #tweet {
-	background-color: #AEC6CF;
+	background-color: #0000E5;
 	border: none;
     border-radius: 3px;
     width: 50px;
@@ -77,10 +103,3 @@ button:active {
 	 -webkit-transition: 1.5s;
 }
 
-/*.theysaidso{
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	right: 50%
-    margin: 0 auto;
-}*/
