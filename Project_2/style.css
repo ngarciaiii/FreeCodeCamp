@@ -89,7 +89,7 @@ body{
 	overflow-y: scroll:
 }
 
-p{
+p {
 	margin: 0 0 20px 0;	
 }
 
@@ -177,7 +177,7 @@ h3 {
 
 .social-media img{
 	/*vertical-align: middle;*/
-	max-height:45px;
+	max-height: 45px;
 	max-width: 45px;
 }
 

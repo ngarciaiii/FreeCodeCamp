@@ -13,41 +13,84 @@ body{
     font-weight:700;
     font-style:normal;
     color: white;
+    letter-spacing: -5px;
 
+    position: fixed;
     display:table;
-    margin: 0 auto;
+    margin-left: 28%;
+    margin-top: 0%;
+}
+
+.bottomer {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    color: white;
+
+    position: fixed;
+    bottom: 0;
+    margin-left: 28.5%;
+    margin-bottom: 7%;
 }
 
 .box {
-	height: 350px;
-	width: 700px;
-	background-color: #FFFFFF;
-    border: 7px solid;
-    border-color: red;
-	
+	height: 400px;
+	width: 850px;
 	position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: 175px auto;
+}
+
+.stars {
+    color: red;
+    font-size:60px;
+    
+    display:table;
+    margin: -15px auto;
+}
+
+span {
+    background-color: #0000E5;
+    padding: 0 13px 0px 13px;
+    -webkit-transition:1.5s;
+}
+
+.lined-content {
+    width: 69%;
+    height: 23px;
+    border-bottom: 13px solid red;
+    text-align: center;
+    
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 152px auto;
+}
+
+#border {
+    border-style: none solid solid solid;
+    border-width: 13px;
+    border-color: red;
 }
 
 #message {
     font-family: 'Slabo', serif;
     font-size: 35px;
-    font-style:normal;
-    color: black;
+    font-style: normal;
+    color: white;
 
     vertical-align: middle;
     text-align: center;
-    margin: auto 0;
-
+    margin: 100px 70px 35px 70px;
 
 }
 
 button {
-	background-color: #0000E5;
+	background-color: red;
 	border: none;
     border-radius: 3px;
     width: 130px;
@@ -66,7 +109,7 @@ button {
 }
 
 #tweet {
-	background-color: #0000E5;
+	background-color: red;
 	border: none;
     border-radius: 3px;
     width: 50px;
@@ -94,12 +137,29 @@ button:focus {
 }
 
 button:hover {
-cursor: default;
+cursor: pointer;
 opacity: 0.7;
 /*background-color: #FABD44;*/
 }
 
 button:active {
-	 -webkit-transition: 1.5s;
+	 -webkit-transition: .5s;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    margin-left: 33%;
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+p {
+    color: white;
 }
 

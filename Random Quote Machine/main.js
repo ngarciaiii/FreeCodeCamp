@@ -1,7 +1,6 @@
 //color changes on click
 
-var colors = [ '#00004C','#E50000', '#000066', '#CE0000', '#00007F', '#B70000', '#000099', '#A00000', '#0000B2', 
-			   '#890000', '#0000CC'], i = 0;
+var colors = [ '#00004C', '#3232FF', '#000066', '#7F7FFF', '#0000CC', '#00007F', '#4242E7', '#000099', '#0000E5'], i = 0;
 
 
 $(document).ready(function() {
@@ -11,10 +10,16 @@ $(document).ready(function() {
 			var quote = data.message;
 			$("#message").text(quote);
 		});
-			
+		
 	    $("body").css("backgroundColor", colors[i]);
-	    $("button").css("backgroundColor", colors[i]);
+	    $("span").css("backgroundColor", colors[i]);
+	    // $("button").css("backgroundColor", colors[i]);
 	    i = (i == colors.length-1) ? 0 : (i+1);	
  	});
 	
+	$("#tweet").on("click",function(){
+      var text = document.getElementById('message').innerHTML;
+      var link= "https://twitter.com/intent/tweet?text=" + text + "&hashtags=trump";
+      window.open(link,'_blank');
+  });
 }); 
