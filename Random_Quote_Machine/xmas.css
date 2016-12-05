@@ -1,63 +1,81 @@
 body{
-	background-color: #0000E5;
+	background-color: #006400;
 	height: 100%; 
 	width: 100%; 
 	position: absolute;
 	-webkit-transition:1.5s;
+
+    overflow: hidden;
 }
 
-.header h1 {
+.container{
+    width: 100em;
+}
+
+h1 {
     font-family: 'Roboto', sans-serif;
-    font-size: 130px;
+    font-size: 7em;
     font-size-adjust:0.40;
     font-weight:700;
     font-style:normal;
     color: white;
-    letter-spacing: -5px;
+    letter-spacing: .025em;
 
     position: fixed;
     display:table;
-    margin-left: 28%;
-    margin-top: 0%;
+    margin-left: 3em;
+    margin-top: .05em;
 }
 
 .bottomer {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 40px;
+    font-size: 2.5em;
     color: white;
 
     position: fixed;
     bottom: 0;
-    margin-left: 28.5%;
-    margin-bottom: 7%;
+    margin-left: 7.9em;
+    margin-bottom: 2em;
 }
 
 .box {
-	height: 400px;
-	width: 850px;
+	height: 25em;
+	width: 50em;
 	position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 175px auto;
+    margin: 11em auto;
+}
+
+#border {
+    border-style: solid solid solid solid;
+    border-width: .8em;
+    border-color: red;
+    outline: red dotted;
 }
 
 .stars {
     color: red;
-    font-size:60px;
+    font-size: 4.3em;
     
     display:table;
-    margin: -15px auto;
+  
+    position: fixed;
+    top: 0;
+    margin-left: 5.3em;
+    margin-top: 2em;
+    z-index: 1;
 }
 
 span {
-    background-color: #0000E5;
-    padding: 0 13px 0px 13px;
+    background-color: #006400;
+    padding: 0 .3em 0 .3em;
     -webkit-transition:1.5s;
 }
 
-.lined-content {
+/*.lined-content {
     width: 69%;
     height: 23px;
     border-bottom: 13px solid red;
@@ -69,17 +87,11 @@ span {
     left: 0;
     right: 0;
     margin: 152px auto;
-}
-
-#border {
-    border-style: none solid solid solid;
-    border-width: 13px;
-    border-color: red;
-}
+}*/
 
 #message {
     font-family: 'Slabo', serif;
-    font-size: 35px;
+    font-size: 2em;
     font-style: normal;
     color: white;
 
@@ -148,6 +160,7 @@ button:active {
 
 footer{
     position: fixed;
+
     bottom: 0;
     margin-left: 33%;
     margin-bottom: 0%;

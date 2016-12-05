@@ -1,0 +1,39 @@
+
+
+body{
+	font-size: 1em;
+	background-color: #0000E5;
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+	height: 100%;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+    font-size: 6em;
+    font-size-adjust:0.40;
+    font-weight:700;
+    font-style:normal;
+    color: white;
+    letter-spacing: .025em;
+	margin: -.125em 0 0 .125em; 
+}
+
+.box {
+	position: fixed;
+	height: 23em;
+	width: 25em;
+	margin-top: .1em;
+	margin-left: -1em;
+	margin-bottom: 3em;
+	bottom: 0;
+}
+
+#border {
+    border-style: solid none solid none;
+    border-width: .8em;
+    border-color: red;
+}
