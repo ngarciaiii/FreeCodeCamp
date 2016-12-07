@@ -22,4 +22,17 @@ $(document).ready(function() {
       var link= "https://twitter.com/intent/tweet?text=" + text + "&hashtags=trump";
       window.open(link,'_blank');
   	});
+
+	// Set num of stars according to window width
+	var width = window.innerWidth;
+	alert(width);
+	if (width < 800) {
+		// Set 3 stars
+		$(".stars").html("&#9733 &#9733 &#9733");
+	} else {
+		// Set 5 stars
+		$(".stars").html("&#9733 &#9733 &#9733 &#9733 &#9733");
+	}
+
 }); 
+
