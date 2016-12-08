@@ -116,7 +116,7 @@ h2{
 /******* ABOUT PAGE *******/
 .about {
 	position: relative;
-	background: url("./img/grey.png");
+	background: url("http://res.cloudinary.com/dt6gln8ue/image/upload/v1466213201/Project%202/grey_x0w534.png");
 	background-repeat: repeat;
 	border-radius: 7px;
 	height: 500px;
@@ -269,7 +269,7 @@ h3 {
 
 .lined-content span {
 	font-size: 27px;
-	background: url("./img/grey.png");
+	background: url("http://res.cloudinary.com/dt6gln8ue/image/upload/v1466213201/Project%202/grey_x0w534.png");
 	padding: 0 5px;
 	color: #005055;
 	float:left;
@@ -401,7 +401,7 @@ textarea {
 
 .contact-content span {
 	font-size: 35px;
-	background: url("./img/grey.png") 50% 0 repeat fixed;
+	background: url("http://res.cloudinary.com/dt6gln8ue/image/upload/v1466213201/Project%202/grey_x0w534.png") 50% 0 repeat fixed;
 	padding: 0 10px; 
 	color: #005055;
 	float: left;
@@ -456,7 +456,7 @@ textarea {
 }
 
 #intro{
-	background:url(./img/intro1.png) 50% 0 no-repeat fixed;
+	background:url("http://res.cloudinary.com/dt6gln8ue/image/upload/v1466213341/Project%202/intro1_zrn7fu.png") 50% 0 no-repeat fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-origin: center;
@@ -470,7 +470,7 @@ textarea {
 }
 
 #second{
-	background: url(./img/intro1.png) 50% 0 no-repeat fixed;
+	background: url("http://res.cloudinary.com/dt6gln8ue/image/upload/v1466213341/Project%202/intro1_zrn7fu.png") 50% 0 no-repeat fixed;
 	background-size: cover;
 	color: white;
 	height: 100vh;
@@ -482,21 +482,21 @@ textarea {
 
 
 #third{
-	background: url(./img/pegboard.jpg) 50% 0 repeat fixed;
+	background: url("http://res.cloudinary.com/dt6gln8ue/image/upload/v1466213277/Project%202/pegboard_pyert6.jpg") 50% 0 repeat fixed;
 	color: white;
 	height: 800px;
 	padding: 15px 0 0 0;	
 }
 
 #fourth{
-	background: url(./img/grey.png) 50% 0 repeat fixed;
+	background: url("http://res.cloudinary.com/dt6gln8ue/image/upload/v1466213201/Project%202/grey_x0w534.png") 50% 0 repeat fixed;
 	height: 100%;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
 }
 
 #fifth{
-	background: url(./img/grey.png) 50% 0 repeat fixed;
+	background: url("http://res.cloudinary.com/dt6gln8ue/image/upload/v1466213201/Project%202/grey_x0w534.png") 50% 0 repeat fixed;
 	height: 700px;
 	margin: 0 auto;
 	padding: 40px 0 0 0;
@@ -519,7 +519,7 @@ textarea {
 /**** FOOTER ****/
 
 footer {
-	background: url("./img/grey.png") 50% 0 repeat fixed;
+	background: url("http://res.cloudinary.com/dt6gln8ue/image/upload/v1466213201/Project%202/grey_x0w534.png") 50% 0 repeat fixed;
 	text-align: center;
 	font: 17px 'Source Sans Pro', sans-serif;
   	color: #005055;
@@ -551,7 +551,7 @@ footer {
 		}
 
 		#intro {
-			background:url(./img/intro1.png) 50% 0 no-repeat;
+			background:url("http://res.cloudinary.com/dt6gln8ue/image/upload/v1466213341/Project%202/intro1_zrn7fu.png") 50% 0 no-repeat;
 			background-attachment: fixed;
 			background-size: 275%;
 			height: 1495px;
@@ -646,7 +646,7 @@ footer {
   and (-webkit-min-device-pixel-ratio: 1){
 
 
-  }
+}
 
 
 
