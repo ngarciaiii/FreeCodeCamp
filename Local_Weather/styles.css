@@ -7,12 +7,44 @@ html, body {
 
 body {
 	font-size: 1em;
-	background: #0E62A1;
+	background: url(http://res.cloudinary.com/dt6gln8ue/image/upload/v1486694046/storm_pa3et4.gif) no-repeat center center fixed; ;
 	height: 100%;
-	width: 100%;
+	/*width: 100%;
 	background-image: linear-gradient(#0e62a1, #2b98e9, #89c6f3);
-	padding-bottom: 70px;
+	padding-bottom: 70px;*/
 }
+
+/**** testing animations ***/
+
+.thunderstorm {
+	background:  url(http://res.cloudinary.com/dt6gln8ue/image/upload/v1486694046/storm_pa3et4.gif) no-repeat center center fixed; 
+}
+
+.drizzle {
+
+}
+
+.rain {
+
+}
+
+.snow {
+
+}
+
+.clear {
+
+}
+
+.cloudy {
+
+}
+
+.windy {
+
+}
+
+/**************************/
 
 .container {
 	position: absolute;
@@ -77,7 +109,7 @@ body {
 .tempUnit {
 	float: right;
 	margin-bottom: 0em;
-	margin-right: -.2em;
+	margin-right: .5em;
 	padding: .1em;
 	font-size: 2em;
 }
@@ -85,6 +117,15 @@ body {
 .tempUnit a {
 	color: white;
 	opacity: 30%;
+}
+
+.tempUnit a:visited {
+	color: white;
+	opacity: 30%;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 button {

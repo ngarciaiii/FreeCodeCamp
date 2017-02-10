@@ -1,1 +1,44 @@
+<!DOCTYPE HTML>
 
+<html>
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name ="viewport" content ="width=device=width, initial-scale=1"/>
+	<title>Local Weather</title>
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,400,600" rel="stylesheet">
+	<link href='styles.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+<div class = "container">
+	<div class="city">
+		<h1 id="location">Getting location</h1>
+		<h3 id = "currentWeather"><h3>
+	</div>
+
+	<div class = "box">
+		<h2 id = "currentTemp"></h2>
+		<h3 id = "high-low"></h3>
+	</div>
+
+	<nav class="navbar navbar-fixed-bottom">
+			<div class="find">
+				<button type="button">
+					<span class ="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+				</button>
+			</div>
+			<div class="tempUnit">
+				<a href="#" id="toggle">&#8451;/&#8457;</a>
+			</div>
+	</nav>
+
+</div>  <!-- container --> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript" src="main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
