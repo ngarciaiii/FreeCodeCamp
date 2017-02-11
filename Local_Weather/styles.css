@@ -8,6 +8,7 @@ html, body {
 body {
 	font-size: 1em;
 	background: url(http://res.cloudinary.com/dt6gln8ue/image/upload/v1486694046/storm_pa3et4.gif) no-repeat center center fixed; ;
+	background-size: cover;
 	height: 100%;
 	/*width: 100%;
 	background-image: linear-gradient(#0e62a1, #2b98e9, #89c6f3);
@@ -20,28 +21,28 @@ body {
 	background:  url(http://res.cloudinary.com/dt6gln8ue/image/upload/v1486694046/storm_pa3et4.gif) no-repeat center center fixed; 
 }
 
-.drizzle {
-
-}
-
 .rain {
-
+	background:  url(http://res.cloudinary.com/dt6gln8ue/image/upload/v1486755411/local_weather/rain_pzj7yt.gif) no-repeat center center fixed; 
 }
 
 .snow {
-
+	background:  url(http://res.cloudinary.com/dt6gln8ue/image/upload/v1486761723/local_weather/snow.gif) no-repeat center center fixed; 
 }
 
 .clear {
+	background:  url(http://res.cloudinary.com/dt6gln8ue/image/upload/v1486755507/local_weather/clear_q7w5pr.gif) no-repeat center center fixed; 
+}
 
+.scattered {
+	background:  url(http://res.cloudinary.com/dt6gln8ue/image/upload/v1486755344/local_weather/scattered_pkxkl8.gif) no-repeat center center fixed; 
 }
 
 .cloudy {
-
+	background:  url(http://res.cloudinary.com/dt6gln8ue/image/upload/v1486762071/local_weather/cloudy.gif) no-repeat center center fixed; 
 }
 
 .windy {
-
+	background:  url(http://res.cloudinary.com/dt6gln8ue/image/upload/v1486755494/local_weather/windy_kqdlaf.gif) no-repeat center center fixed; 
 }
 
 /**************************/

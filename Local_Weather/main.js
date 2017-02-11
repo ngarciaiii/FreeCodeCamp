@@ -43,7 +43,7 @@ $(document).ready(function() {
 				render(wd, cel);
 			})
 
-			// if 
+			// switch (weather.id) 
 
 		})
 	});
