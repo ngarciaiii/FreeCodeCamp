@@ -26,7 +26,7 @@ var bg_animation = $('body');
 
 $(document).ready(function() {
 
-	$.getJSON("http://ip-api.com/json", function(data){
+	$.getJSON("https://www.googleapis.com/geolocation/v1/geolocate?key=, function(data){
 		lat = data.lat;
 		lon = data.lon;
 		alert("assigning the data...")
