@@ -1,6 +1,8 @@
 var API_KEY = "d19f6725b4e71d3942c11562d40eb174";
 var cel = false;
 var wd;
+var lat;
+var lon;
 
 function displayTemp(ftemp, c) {
 	if (c) return Math.round((ftemp - 32) * (5/9)) + "&#176;";
@@ -24,12 +26,14 @@ var bg_animation = $('body');
 
 $(document).ready(function() {
 
-	$.getJSON("http://ipinfo.io/json", function(d){
+	$.getJSON("http://ip-api.com/json", function(data){
+		lat = data.lat;
+		lon = data.lon;
 		alert("assigning the data...")
-		loc = d.loc.split(",");
-		alert(loc);
+		alert(lat);
+		alert(lon);
 
-		$.getJSON('http://api.openweathermap.org/data/2.5/weather?units=imperial&lat=' + loc[0] + '&lon=' + loc[1] + '6&APPID=' + API_KEY, function(apiData){
+		$.getJSON('http://api.openweathermap.org/data/2.5/weather?units=imperial&lat=' + lat + '&lon=' + lon + '6&APPID=' + API_KEY, function(apiData){
 			//loc[0] = lat
 			//loc [1] = lon
 			//wd = weather data
