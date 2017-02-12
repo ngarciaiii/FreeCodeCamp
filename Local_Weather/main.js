@@ -41,10 +41,7 @@ $(document).ready(function() {
 				$("tempUnit").toggleClass("bold");
 				cel = !cel;
 				render(wd, cel);
-			})
-
-			// switch (weather.id) 
-
+			})	
 		})
 	});
 
