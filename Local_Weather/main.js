@@ -1,4 +1,6 @@
-var API_KEY = "d19f6725b4e71d3942c11562d40eb174";
+GOOGEO_KEY = ENV["GOOGEO_KEY"];
+OWM_KEY = ENV["OWM_KEY"];
+
 var cel = false;
 var wd;
 var lat;
@@ -26,14 +28,14 @@ var bg_animation = $('body');
 
 $(document).ready(function() {
 
-	$.getJSON("https://www.googleapis.com/geolocation/v1/geolocate?key=, function(data){
+	$.getJSON("https://www.googleapis.com/geolocation/v1/geolocate?key=GOOGEO_KEY", function(data){
 		lat = data.lat;
 		lon = data.lon;
 		alert("assigning the data...")
 		alert(lat);
 		alert(lon);
 
-		$.getJSON('http://api.openweathermap.org/data/2.5/weather?units=imperial&lat=' + lat + '&lon=' + lon + '6&APPID=' + API_KEY, function(apiData){
+		$.getJSON('http://api.openweathermap.org/data/2.5/weather?units=imperial&lat=' + lat + '&lon=' + lon + '6&APPID=' + OWM_KEY, function(apiData){
 			//loc[0] = lat
 			//loc [1] = lon
 			//wd = weather data
