@@ -1,0 +1,22 @@
+{
+  "name": "freecodecamp",
+  "version": "1.0.0",
+  "description": "\"javascript projects from www.freecodecamp.com\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ngarciaiii/FreeCodeCamp.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "ngarciaiii <nicolas.garciaiii@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngarciaiii/FreeCodeCamp/issues"
+  },
+  "homepage": "https://github.com/ngarciaiii/FreeCodeCamp#readme"
+}
