@@ -18,27 +18,27 @@ body {
 /**** testing animations ***/
 
 .thunderstorm {
-	background:  url(http://i.giphy.com/CIYF0RVOmd2qQ.gif) no-repeat center center fixed; 
+	background:  url(http://i.giphy.com/CIYF0RVOmd2qQ.gif) no-repeat center center fixed;
 }
 
 .rain {
-	background:  url(http://i.giphy.com/QPsEnRasf0Vfa.gif) no-repeat center center fixed; 
+	background:  url(http://i.giphy.com/QPsEnRasf0Vfa.gif) no-repeat center center fixed;
 }
 
 .snow {
-	background:  url(http://i.giphy.com/AlvSS5TA1uNXi.gif) no-repeat center center fixed; 
+	background:  url(http://i.giphy.com/AlvSS5TA1uNXi.gif) no-repeat center center fixed;
 }
 
 .clear {
-	background:  url(http://i.giphy.com/YXdW238DwHYfC.gif) no-repeat center center fixed; 
+	background:  url(http://i.giphy.com/YXdW238DwHYfC.gif) no-repeat center center fixed;
 }
 
 .scattered {
-	background:  url(http://i.giphy.com/QZMuxmZ2XPnaw.gif) no-repeat center center fixed; 
+	background:  url(http://i.giphy.com/QZMuxmZ2XPnaw.gif) no-repeat center center fixed;
 }
 
 .cloudy {
-	background:  url(http://i.giphy.com/h3UrS4sR6vBni.gif) no-repeat center center fixed; 
+	background:  url(http://i.giphy.com/h3UrS4sR6vBni.gif) no-repeat center center fixed;
 }
 
 /**************************/
@@ -133,10 +133,3 @@ button {
 	border: 0;
 	background: transparent;
 }
-
-
-
-
-
-
-
