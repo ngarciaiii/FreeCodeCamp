@@ -20,7 +20,7 @@ body {
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 13px 13px;
+    padding: 0px 8px 13px 13px;
     font-family: 'Righteous', cursive;
     text-decoration: none;
     font-size: 20px;
@@ -34,14 +34,6 @@ body {
     color: #f1f1f1;
 }
 
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: -10px;
-    right: 3px;
-    font-size: 36px;
-    margin-left: 50px;
-}
 
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
