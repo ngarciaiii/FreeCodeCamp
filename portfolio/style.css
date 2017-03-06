@@ -44,7 +44,7 @@ body {
 }
 
 /* icon */
-i {
+label i {
   margin-top: 13px;
   margin-left: 7px;
   padding-top: 6px;
@@ -56,71 +56,51 @@ i {
   border-radius: 50%;
 }
 
-
-
-#icon {
-  -webkit-animation-name: spin;
-  -webkit-animation-duration: 40ms;
-  -webkit-animation-iteration-count: 3;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: spin;
-  -moz-animation-duration: 40ms;
-  -moz-animation-iteration-count: 3;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: spin;
-  -ms-animation-duration: 40ms;
-  -ms-animation-iteration-count: 3;
-  -ms-animation-timing-function: linear;
-  animation-name: spin;
-  animation-duration: 40ms;
-  animation-iteration-count: 3;
-  animation-timing-function: linear;
-
-  @-ms-keyframes spin {
-    from { -ms-transform: rotate(0deg); }
-    to { -ms-transform: rotate(360deg); }
-  }
-
-  @-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-  }
-
-  @-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-  }
-
-  @keyframes spin {
-    from {
-      transform:rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+#hacky-input {
+  display: none;
 }
+
+label {
+  display: inline-block;
+}
+
+label.spin {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -ms-transition-property: -ms-transform;
+  -o-transition-property: -o-transform;
+  transition-property: transform;
+}
+
+#hacky-input:checked + label.spin {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
 
 /***** Footer *****/
-footer p{
-  font-family: 'Raleway', sans-serif;
-  color: white;
-}
-.social-media {
-	bottom: 1;
-}
-
-.social-media .btn{
-	background-color:#70E3A2;
-	border: 2px solid #005055;
-	max-height:50px;
-	max-width:50px;
-	padding: 0;
-	margin: 30px 13px 0 13px;
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-left: 31px;
+  margin-bottom: 35px;
 }
 
-.social-media img{
-	/*vertical-align: middle;*/
-	max-height: 45px;
-	max-width: 45px;
+.social-media i {
+    color: white;
+    padding: 10px 13px 10px 13px;
+    margin: 10px;
+    border: 3px solid white;
+    border-radius: 50%;
 }
