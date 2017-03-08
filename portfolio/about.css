@@ -1,7 +1,7 @@
 /****** MOBILE *****/
 
 body {
-  background-color: #815ec1;
+  background-color: white;
   height: 100%;
 }
 
@@ -52,8 +52,8 @@ label i {
   padding-right: 7px;
   padding-bottom: 5px;
   padding-left: 7px;
-  color: white;
-  border: 2px solid white;
+  color: #724bba;
+  border: 2px solid #724bba;
   border-radius: 50%;
 }
 
@@ -85,46 +85,4 @@ label.spin {
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360deg);
   transform: rotate(360deg);
-}
-
-
-/********* IMG *********/
-
-img {
-  height: 250px;
-  width: auto;
-}
-
-.img {
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 35px;
-
-  color: white;
-  font-family: 'Righteous', cursive;
-  text-align: center;
-}
-
-/*** motto ***/
-.motto {
-  color: white;
-  text-align: center;
-
-}
-
-/***** Footer *****/
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 90%;
-  margin-left: 31px;
-  margin-bottom: 35px;
-}
-
-.social-media i {
-    color: white;
-    padding: 10px 13px 10px 13px;
-    margin: 10px;
-    border: 3px solid white;
-    border-radius: 50%;
 }
