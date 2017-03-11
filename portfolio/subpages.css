@@ -57,6 +57,7 @@ label i {
   border-radius: 50%;
 }
 
+/* Using checked box to active onclick icon*/
 #hacky-input {
   display: none;
 }
@@ -112,25 +113,57 @@ h1 {
   text-align: center;
 }
 
-/** popover **/
 
-
-.row {
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.img-size img {
+/*.img-size img {
   height: 200px;
   width: 320px;
-
-}
-
-/*.smaller {
-  height: 250px;
-  width: auto;
 }*/
 
 p a{
   color: #724bba;
+}
+
+/** overlay **/
+/*** ISSUES: cannot revert overlay; when overlays, winds up to top ***/
+/* change background color?*/
+
+.gallery {
+  position: relative;
+  width: 320px;
+  margin-right: auto;
+  margin-bottom: 15px;
+  margin-left: auto;
+}
+
+.image {
+  display: block;
+  width: 320px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.gallery:hover .overlay {
+  opacity: .8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
