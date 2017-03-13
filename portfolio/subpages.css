@@ -88,6 +88,31 @@ label.spin {
   transform: rotate(360deg);
 }
 
+/****** SOCIAL-MEDIA *******/
+
+.social-media i {
+  margin-top: 13px;
+  margin-right: 7px;
+  padding-top: 6px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+  color: #724bba;
+  border: 2px solid #724bba;
+  border-radius: 50%;
+}
+
+/*.social-media i {
+    font-size:
+    color: #724bba;
+    padding: 10px 13px 10px 13px;
+    margin: 10px;
+    border: 3px solid #724bba;
+    border-radius: 50%;
+}*/
+
+/**** main *****/
+
 h2 {
   color: #724bba;
   text-align: center;
@@ -106,6 +131,9 @@ p {
 a {
   text-decoration: none;
 }
+
+
+
 
 /******* BANANAS PAGE ******/
 h1 {
@@ -141,6 +169,8 @@ p a{
   height: 200px;
 }
 
+
+
 .overlay {
   position: absolute;
   top: 0;
@@ -160,6 +190,7 @@ p a{
 
 .text {
   color: white;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   position: absolute;
   top: 35%;
