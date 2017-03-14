@@ -2,7 +2,7 @@
 /****** MOBILE *****/
 
 body {
-  background-color: white;
+  background-color: #baa7dd;
   height: 100%;
 }
 
@@ -62,10 +62,6 @@ label i {
   display: none;
 }
 
-label {
-  display: inline-block;
-}
-
 label.spin {
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
@@ -88,30 +84,6 @@ label.spin {
   transform: rotate(360deg);
 }
 
-/****** SOCIAL-MEDIA *******/
-
-.social-media i {
-  margin-top: 13px;
-  margin-right: 7px;
-  padding-top: 6px;
-  padding-right: 7px;
-  padding-bottom: 5px;
-  padding-left: 7px;
-  color: #724bba;
-  border: 2px solid #724bba;
-  border-radius: 50%;
-}
-
-/*.social-media i {
-    font-size:
-    color: #724bba;
-    padding: 10px 13px 10px 13px;
-    margin: 10px;
-    border: 3px solid #724bba;
-    border-radius: 50%;
-}*/
-
-/**** main *****/
 
 h2 {
   color: #724bba;
@@ -132,8 +104,24 @@ a {
   text-decoration: none;
 }
 
+/****** SOCIAL-MEDIA *******/
+.social-media{
+  float: right;
+  top: 8px;
+  right: 0;
+}
 
-
+.social-media i {
+  margin-top: 13px;
+  margin-right: 7px;
+  padding-top: 6px;
+  padding-right: 7px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+  color: #724bba;
+  border: 2px solid #724bba;
+  border-radius: 50%;
+}
 
 /******* BANANAS PAGE ******/
 h1 {
@@ -197,4 +185,80 @@ p a{
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+/******* SKILLS ******/
+/*-------- TimeLine ---------*/
+
+#cd-timeline {							/**** left column *****/
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: 3em;
+}
+#cd-timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  height: 90%;
+  width: 3px;
+  background: #005055;
+}
+
+.cd-timeline-block {                 /*** separates content boxes ***/
+  position: relative;
+  margin: 2em 0;
+}
+
+.cd-timeline-block:after {           /*** separates content boxes ***/
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cd-timeline-img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 7%;
+  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.cd-timeline-img img {
+  display: block;
+  width: 43px;
+  height: 43px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 3px;
+}
+
+.cd-timeline-img.cd-completed {
+  background: #005055;
+}
+
+.cd-timeline-img.cd-incomplete {
+  background: #ffd46b;
+}
+
+.cd-timeline-content {
+  position: relative;
+  width: 200px;
+  height: 90px;
+  float: left;
+  margin-left: 63px;
+  margin-top: -13px;
+  padding: 1.6em;
+  background: white;
+  border-radius: 0.25em;
+  box-shadow: 0 3px 0 #d7e4ed;
+}
+
+.cd-timeline-content h2 {
+  color: #005055;
+  font-size: 25px;
+  margin-top: -3px;
 }

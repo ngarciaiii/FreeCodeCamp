@@ -11,6 +11,11 @@
   <link rel="stylesheet" type="text/css" href='subpages.css'>
 </head>
 <body>
+<style>
+  body {
+    background-color: white !important;
+  }
+</style>
 
 <div id="mySidenav" class="sidenav">
     <a href="index.html">HOME</a>
@@ -21,16 +26,17 @@
 </div>
 
 <div id="main">
+  <div class="inline">
+    <input type="checkbox" id="hacky-input">
+    <label for="hacky-input" class="spin" onclick="toggleNav()">
+        <i class="fa fa-bars spin" id = "icon" aria-hidden="true"></i>
+    </label>
 
-  <input type="checkbox" id="hacky-input">
-  <label for="hacky-input" class="spin" onclick="toggleNav()">
-    <i class="fa fa-bars spin" id = "icon" aria-hidden="true"></i>
-  </label>
-
-  <div id="social-media">
-    <a href="https://www.github.com/ngarciaiii"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-    <a href="https://www.dribbble.com/ngarciaiii"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-    <a href="https://www.linkedin.com/in/nicolas-garcia-iii-a87774a1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <div class="social-media">
+      <a href="https://www.github.com/ngarciaiii"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+      <a href="https://www.dribbble.com/ngarciaiii"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/nicolas-garcia-iii-a87774a1"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    </div>
   </div>
 
   <h2>MONKEY SEE, <br> MONKEY DO</h2>
