@@ -124,45 +124,40 @@ a {
 }
 
 /******* BANANAS PAGE ******/
-.title {
+h1 {
   color: #724bba;
   text-align: center;
 }
 
-.subtitle {
-  color: #84779B;
-  margin-left: 5px;
+
+/*.img-size img {
+  height: 200px;
+  width: 320px;
+}*/
+
+p a{
+  color: #724bba;
 }
 
-
 /** overlay **/
+/*** ISSUES: cannot revert overlay; when overlays, winds up to top ***/
+/* change background color?*/
 
 .gallery {
   position: relative;
-  width: 345px;
+  width: 320px;
   margin-right: auto;
-  /*margin-bottom: 15px;*/
+  margin-bottom: 15px;
   margin-left: auto;
 }
 
 .image {
   display: block;
-  width: 345px;
-  height: 216px;
+  width: 320px;
+  height: 200px;
 }
 
-.overlay a {
-  postion: absolute;
-  float: bottom;
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  z-index: 3;
-}
 
-.overlay br {
-  line-height: 10em;
-}
 
 .overlay {
   position: absolute;
@@ -190,81 +185,4 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-}
-
-
-/******* SKILLS ******/
-/*-------- TimeLine ---------*/
-
-#cd-timeline {							/**** left column *****/
-  position: relative;
-  padding: 2em 0;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  margin-left: 3em;
-}
-#cd-timeline::before {
-  /* this is the vertical line */
-  content: '';
-  position: absolute;
-  top: 7%;
-  left: 5%;
-  height: 90%;
-  width: 3px;
-  background: #724bba;
-}
-
-.cd-timeline-block {                 /*** separates content boxes ***/
-  position: relative;
-  margin: 2em 0;
-}
-
-.cd-timeline-block:after {           /*** separates content boxes ***/
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.cd-timeline-img {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 7%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
-}
-
-.cd-timeline-img img {
-  display: block;
-  width: 43px;
-  height: 43px;
-  position: relative;
-  margin: 0 auto;
-  margin-top: 3px;
-}
-
-.cd-timeline-img.cd-completed {
-  background: #724bba;
-}
-
-.cd-timeline-img.cd-incomplete {
-  background: #724bba;
-}
-
-.cd-timeline-content {
-  position: relative;
-  width: 200px;
-  height: 90px;
-  float: left;
-  margin-left: 63px;
-  margin-top: -13px;
-  padding: 1.6em;
-  background: white;
-  border-radius: 0.25em;
-  box-shadow: 0 3px 0 #d7e4ed;
-}
-
-.cd-timeline-content h2 {
-  color: #724bba;
-  font-size: 25px;
-  margin-top: -3px;
 }
