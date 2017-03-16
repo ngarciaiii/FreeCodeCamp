@@ -104,6 +104,10 @@ a {
   text-decoration: none;
 }
 
+p a{
+  color: #724bba;
+}
+
 /****** SOCIAL-MEDIA *******/
 .social-media{
   float: right;
@@ -124,10 +128,6 @@ a {
 }
 
 /******* BANANAS PAGE ******/
-.title {
-  color: #724bba;
-  text-align: center;
-}
 
 .subtitle {
   color: #84779B;
@@ -203,20 +203,22 @@ a {
   margin-bottom: 2em;
   margin-left: 3em;
 }
-#cd-timeline::before {
+
+/*#cd-timeline::before {*/
   /* this is the vertical line */
-  content: '';
+  /*content: '';
   position: absolute;
-  top: 7%;
-  left: 5%;
+  margin-top: -27px;
+  margin-left: -27px;
   height: 90%;
   width: 3px;
   background: #724bba;
-}
+}*/
 
 .cd-timeline-block {                 /*** separates content boxes ***/
   position: relative;
-  margin: 2em 0;
+  margin-top: -27px;
+  margin-left: -2px;
 }
 
 .cd-timeline-block:after {           /*** separates content boxes ***/
@@ -230,7 +232,7 @@ a {
   width: 50px;
   height: 50px;
   border-radius: 7%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 4px #724bba, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .cd-timeline-img img {
@@ -243,11 +245,11 @@ a {
 }
 
 .cd-timeline-img.cd-completed {
-  background: #724bba;
+  background: #baa7dd;
 }
 
 .cd-timeline-img.cd-incomplete {
-  background: #724bba;
+  background: #baa7dd;
 }
 
 .cd-timeline-content {
@@ -267,4 +269,11 @@ a {
   color: #724bba;
   font-size: 25px;
   margin-top: -3px;
+}
+
+/****** SKILLS ******/
+
+.center{
+  text-align: center;
+  margin-left: -5px;
 }
