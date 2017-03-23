@@ -127,3 +127,30 @@ footer {
     border: 3px solid white;
     border-radius: 50%;
 }
+
+/********** IPHONE LANDSCAPE **************/
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+  img {
+    height: 200px;
+  }
+
+  .img {
+    margin-top: -15px;
+    margin-left: 220px;
+  }
+
+  footer {
+    height: 87%;
+    width: 10%;
+    margin-left: 550px;
+  }
+
+}
+
+@media (min-width:801px) {
+
+	}
