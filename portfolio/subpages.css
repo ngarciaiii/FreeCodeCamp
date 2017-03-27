@@ -1,12 +1,12 @@
 /****** ALL SUBPAGES ******/
-/****** MOBILE *****/
+/******* MOBILE *******/
 
 body {
   background-color: white;
   height: 100%;
 }
 
-/***** SIDENAV *****/
+/*** SIDENAV ***/
 .sidenav {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -44,7 +44,7 @@ body {
     font-size: 15px;
 }
 
-/********** ICON ********/
+/*** ICON ***/
 label i {
   margin-top: 13px;
   margin-left: 7px;
@@ -84,31 +84,7 @@ label.spin {
   transform: rotate(360deg);
 }
 
-
-h2 {
-  color: #724bba;
-  text-align: center;
-}
-
-p {
-  color: #724bba;
-  margin-left: 7px;
-  margin-right: 5px;
-}
-
-.introSent {
-  font-size: 21px;
-}
-
-a {
-  text-decoration: none;
-}
-
-p a{
-  color: #724bba;
-}
-
-/****** SOCIAL-MEDIA *******/
+/*** SOCIAL-MEDIA ***/
 .social-media{
   float: right;
   top: 8px;
@@ -127,21 +103,59 @@ p a{
   border-radius: 50%;
 }
 
-/******* BANANAS PAGE ******/
+/******* ABOUT *******/
+
+.about h2 {
+  color: #724bba;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about p {
+  color: #724bba;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.introSent {
+  font-size: 21px;
+}
+
+.about a {
+  text-decoration: none;
+}
+
+.about p a{
+  color: #724bba;
+}
+
+.abtpix {
+  position: relative;
+  margin-left: -20px;
+  height: 300px;
+  width: auto;
+}
+
+/******* BANANAS PAGE *******/
 
 .subtitle {
   color: #84779B;
-  margin-left: 5px;
+  margin-left: 13px;
+}
+
+.bananas p {
+  color: #724bba;
+  margin-left: 13px;
+  margin-right: 13px;
 }
 
 
-/** overlay **/
+/*** overlay ***/
 
 .gallery {
   position: relative;
   width: 345px;
   margin-right: auto;
-  /*margin-bottom: 15px;*/
   margin-left: auto;
 }
 
@@ -152,8 +166,7 @@ p a{
 }
 
 .overlay a {
-  postion: absolute;
-  float: bottom;
+  margin-left: 31%;
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
@@ -161,7 +174,7 @@ p a{
 }
 
 .overlay br {
-  line-height: 10em;
+  line-height: 19em;
 }
 
 .overlay {
@@ -193,8 +206,32 @@ p a{
 }
 
 
-/******* SKILLS ******/
+/******* SKILLS *******/
 /*-------- TimeLine ---------*/
+
+.skills p {
+  color: #724bba;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.lined-content {
+	width: 85%;
+  margin-left: 36px;
+	height: 23px;
+	border-bottom: 2px solid #724bba;
+	text-align: center;
+}
+
+.lined-content span {
+	font-size: 27px;
+  background-color: white;
+	padding: 0 5px;
+	color: #84779B;
+	float:left;
+	margin-left: -29px;
+}
+
 
 #cd-timeline {							/**** left column *****/
   position: relative;
@@ -204,22 +241,11 @@ p a{
   margin-left: 3em;
 }
 
-/*#cd-timeline::before {*/
-  /* this is the vertical line */
-  /*content: '';
-  position: absolute;
-  margin-top: -27px;
-  margin-left: -27px;
-  height: 90%;
-  width: 3px;
-  background: #724bba;
-}*/
-
-.cd-timeline-block {                 /*** separates content boxes ***/
-  position: relative;
-  margin-top: -27px;
+/*.cd-timeline-block {                 /*** separates content boxes ***/
+  /*position: relative;
+  margin-top: 0px;
   margin-left: -2px;
-}
+} */
 
 .cd-timeline-block:after {           /*** separates content boxes ***/
   content: "";
@@ -271,9 +297,102 @@ p a{
   margin-top: -3px;
 }
 
-/****** SKILLS ******/
+/******* SKILLS *******/
+
+.skills p {
+  color: #724bba;
+  margin-left: 13px;
+  margin-right:13px;
+}
 
 .center{
   text-align: center;
   margin-left: -5px;
+}
+
+
+/******* IPHONE LANDSCAPE *******/
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+}
+
+/******* DESKTOP *******/
+
+@media (min-width : 801px) {
+
+/***** ABOUT *****/
+  .col-md-6 {
+    margin-left: 35px;
+  }
+
+  .about {
+    margin-top: 75px;
+  }
+
+  .about h2 {
+    width: 600px;
+    font-size: 45px;
+    text-align: center;
+    margin-left: -150px;
+  }
+
+  .about p {
+    width: 600px;
+    margin-top:
+    margin-right: 15px;
+  }
+
+  .abtpix img{
+    position: sticky;
+    margin-top: 50px;
+    margin-left: 75px;
+  }
+
+/***** BANANAS *****/
+
+  .subtitle {
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    font-size: 50px;
+  }
+
+  .bananas p {
+    margin-top: 10px;
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .gallery {
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .image {
+    width: 700px;
+    height: 432px;
+  }
+
+  .overlay a {
+    margin-left: 35%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    z-index: 3;
+  }
+
+  .text {
+    font-size: 50px;
+  }
+
+/******* SKILLS *******/
+
+
 }

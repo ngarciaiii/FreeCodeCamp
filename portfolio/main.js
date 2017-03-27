@@ -1,3 +1,4 @@
+
 function toggleNav(){
   var elementSide = document.getElementById("mySidenav");
   var elementMain = document.getElementById("main");
